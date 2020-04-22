@@ -1,0 +1,2 @@
+rootProject.name='Guia Valledupar'
+include ':app'
