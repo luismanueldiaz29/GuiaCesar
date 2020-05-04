@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void PlatosTipicos(View view) {
+        Intent intent = new Intent(this, Plato_Tipico.class);
+        startActivity(intent);
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Platos tipicos", Toast.LENGTH_SHORT);
         toast1.show();
     }
