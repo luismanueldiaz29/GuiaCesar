@@ -8,67 +8,95 @@
     tools:context=".MainActivity"
     >
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-            >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_margin="@dimen/cardview_default_elevation"
-            android:padding="@dimen/Borde"
-            >
+            android:layout_margin="@dimen/cardview_default_elevation">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="474dp"
+                android:paddingBottom="@dimen/Borde"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_info"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/Borde"
+                android:background="@color/ic_index_background"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_marginBottom="@dimen/Borde">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/Borde">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_imagen"
+                    android:layout_marginTop="@dimen/Borde"
+                    android:layout_marginBottom="@dimen/Borde">
+
+                    <ImageView
+                        android:id="@+id/sitio_interes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="SitiosInteres"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sitiosdeinteres"></ImageView>
+                </LinearLayout>
+
 
                 <ImageView
-                    android:id="@+id/sitio_interes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="SitiosInteres"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_imagen"
+                    android:layout_marginBottom="@dimen/Borde"
+                    android:onClick="Evento"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/sitiosdeinteres"></ImageView>
+                    android:src="@drawable/eventos"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_imagen"
+                    android:layout_marginBottom="@dimen/Borde"
+                    android:onClick="Parques"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/parques"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_imagen"
+                    android:layout_marginBottom="@dimen/Borde"
+                    android:onClick="PlatosTipicos"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/platostipicos"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_imagen"
+                    android:onClick="Emergencias"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/emrgencias"></ImageView>
+
             </LinearLayout>
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_marginBottom="@dimen/Borde"
-                android:onClick="Evento"
-                android:scaleType="centerCrop"
-                android:src="@drawable/eventos"></ImageView>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_marginBottom="@dimen/Borde"
-                android:onClick="Parques"
-                android:scaleType="centerCrop"
-                android:src="@drawable/parques"></ImageView>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_marginBottom="@dimen/Borde"
-                android:onClick="PlatosTipicos"
-                android:scaleType="centerCrop"
-                android:src="@drawable/platostipicos"></ImageView>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_marginBottom="@dimen/Borde"
-                android:onClick="Emergencias"
-                android:scaleType="centerCrop"
-                android:src="@drawable/emrgencias"></ImageView>
 
         </LinearLayout>
 

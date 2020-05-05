@@ -1,3 +1,4 @@
+
 package com.example.guiavalledupar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -5,15 +6,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
+
 public class MainActivity extends AppCompatActivity {
+
+    CarouselView carouselView;
+
+    int[] sampleImages = {R.drawable.laduda, R.drawable.lajunta, R.drawable.callejonpurruputu, R.drawable.pueblobello, R.drawable.canaberales, R.drawable.lapaz};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        carouselView = (CarouselView) findViewById(R.id.carouselView);
+        carouselView.setPageCount(sampleImages.length);
+
+        carouselView.setImageListener(imageListener);
     }
+
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
 
     public void SitiosInteres(View view) {
         Intent intent = new Intent(this, Sitios.class);
