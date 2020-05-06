@@ -18,6 +18,17 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/cardview_default_elevation">
 
+            <!--<TextView
+                android:id="@+id/infocarrusel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="asasas"
+                android:textColor="@color/cardview_dark_background"
+                android:textLocale="@string/text_info"
+                android:textStyle="bold" />-->
+
+
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
@@ -29,17 +40,6 @@
                 app:slideInterval="3000"
                 app:strokeColor="#FF777777"
                 app:strokeWidth="1dp" />
-
-            <!--<TextView
-                android:id="@+id/infocarrusel"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:text="asasas"
-                android:textColor="@color/cardview_dark_background"
-                android:textLocale="@string/text_info"
-                android:textStyle="bold" />-->
-
 
             <TextView
                 android:layout_width="match_parent"
