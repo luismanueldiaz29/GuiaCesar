@@ -8,49 +8,12 @@
     android:background="@color/default_circle_indicator_stroke_color"
     tools:context=".Plato_Tipico">
 
-    <ScrollView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReciclerViewPlatos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/encabplatos" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="Platos tipicos"
-                android:textColor="@android:color/black"
-                android:textSize="30dp"
-                android:textStyle="normal" />
-
-            <com.synnapps.carouselview.CarouselView
-                android:id="@+id/carouselView"
-                android:layout_width="match_parent"
-                android:layout_height="474dp"
-                android:paddingBottom="@dimen/Borde"
-                app:fillColor="#FFFFFFFF"
-                app:pageColor="#00000000"
-                app:radius="6dp"
-                app:slideInterval="3000"
-                app:strokeColor="#FF777777"
-                app:strokeWidth="1dp" />
-
-            <TextView
-                android:id="@+id/textplatos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/Borde"/>
-        </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>

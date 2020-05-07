@@ -30,7 +30,7 @@ public class PlatoRepository {
         Resources Res = this.context.getResources();
         String[] name = Res.getStringArray(R.array.name_plato);
         String[] description = Res.getStringArray(R.array.description_plato);
-        int[] img = {R.drawable.lapaz,R.drawable.lapaz,R.drawable.lapaz,R.drawable.lapaz,R.drawable.lapaz};
+        int[] img = {R.drawable.chivoasado,R.drawable.carneresasada,R.drawable.arrosconcoco,R.drawable.sancocho,R.drawable.viudadepescado};
         ArrayList<Plato> platos = new ArrayList<>();
 
         ListIterator<Plato> platoListIterator;
