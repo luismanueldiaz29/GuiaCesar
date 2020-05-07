@@ -9,10 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".detalleSitios"></activity>
+        <activity android:name=".detalleSitios" android:parentActivityName=".Sitios" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sitios" />
+        </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Plato_Tipico" />
-        <activity android:name=".Sitios" />
+        <activity android:name=".Plato_Tipico" android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Sitios" android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
