@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +27,7 @@ public class Plato_Tipico extends AppCompatActivity {
     private PlatoService PlatoService;
     private RecyclerView recyclerViewPlatos;
     private Adapter adapter;
+    private int click;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,21 @@ public class Plato_Tipico extends AppCompatActivity {
 
         adapter = new Adapter(platos);
         recyclerViewPlatos.setAdapter(adapter);
+
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String posicion = recyclerViewPlatos.getChildAdapterPosition(v)+"";
+                Detalle(posicion);
+                Toast.makeText(getApplicationContext(), "click in "+posicion, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void Detalle(String item){
+        Intent intent = new Intent(this, Detalle_plato.class);
+        intent.putExtra("posicion", item);
+        startActivity(intent);
     }
 
 }

@@ -8,6 +8,12 @@
     android:background="@color/default_circle_indicator_stroke_color"
     tools:context=".Plato_Tipico">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/encabplatos"
+        android:layout_marginBottom="10dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ReciclerViewPlatos"

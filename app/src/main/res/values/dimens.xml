@@ -2,4 +2,5 @@
 <resources>
     <dimen name="Borde">15dp</dimen>
     <dimen name="height_imagen">219dp</dimen>
+    <dimen name="parrafoPlato">17sp</dimen>
 </resources>

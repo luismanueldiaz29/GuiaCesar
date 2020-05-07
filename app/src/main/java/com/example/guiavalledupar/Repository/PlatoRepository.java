@@ -30,7 +30,9 @@ public class PlatoRepository {
         Resources Res = this.context.getResources();
         String[] name = Res.getStringArray(R.array.name_plato);
         String[] description = Res.getStringArray(R.array.description_plato);
+        String[] preparation = Res.getStringArray(R.array.preparation_plato);
         int[] img = {R.drawable.chivoasado,R.drawable.carneresasada,R.drawable.arrosconcoco,R.drawable.sancocho,R.drawable.viudadepescado};
+
         ArrayList<Plato> platos = new ArrayList<>();
 
         ListIterator<Plato> platoListIterator;
@@ -39,11 +41,17 @@ public class PlatoRepository {
             Plato.Name = name[i];
             Plato.Description = description[i];
             Plato.Image = img[i];
+            Plato.Preparation = preparation[i];
             platos.add(Plato);
 
             Toast.makeText(this.context, Plato.Name+"plato y name "+name.length+" numero"+platos.size(), Toast.LENGTH_LONG).show();
         }
-
         return platos;
+    }
+
+    public Plato getPlato(int posicion){
+        ArrayList<Plato> platos =  getPlatos();
+        Toast.makeText(this.context, platos.get(posicion).Name+"plato"+" numero"+platos.size(), Toast.LENGTH_LONG).show();
+        return platos.get(posicion);
     }
 }

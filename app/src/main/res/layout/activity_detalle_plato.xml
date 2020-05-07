@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalle_plato">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgPlato"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sancocho"
+                android:layout_marginTop="@dimen/Borde"/>
+
+            <TextView
+                android:id="@+id/tvNamePlato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_info"
+                android:layout_margin="@dimen/Borde"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/descripcion"
+                android:layout_margin="@dimen/Borde"/>
+            <TextView
+                android:id="@+id/tvPlatoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_info"
+                android:layout_margin="@dimen/Borde"
+                android:textSize="@dimen/parrafoPlato"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Preparacion :"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/Borde"
+                />
+            <TextView
+                android:id="@+id/tvPreparacion_plato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/Borde"
+                android:textSize="@dimen/parrafoPlato"
+                android:text="@string/text_info"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

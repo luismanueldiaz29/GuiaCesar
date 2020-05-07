@@ -13,7 +13,11 @@ import com.example.guiavalledupar.Entity.Plato;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> implements View.OnClickListener{
+
+    private View.OnClickListener listener;
+
+
     public static class ViewHolder extends RecyclerView.ViewHolder{
         private TextView name, description;
         ImageView fotoPlato;
@@ -34,8 +38,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_plato, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        view.setOnClickListener(this);
 
+        ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
@@ -45,6 +50,18 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         holder.description.setText(platos.get(position).Description);
         holder.fotoPlato.setImageResource(platos.get(position).Image);
     }
+
+    public void setOnClickListener(View.OnClickListener listener){
+        this.listener = listener;
+    }
+    @Override
+    public void onClick(View v) {
+        if(listener != null){
+            listener.onClick(v);
+        }
+    }
+
+
 
     @Override
     public int getItemCount() {

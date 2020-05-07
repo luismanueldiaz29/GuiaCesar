@@ -20,4 +20,8 @@ public class PlatoService {
     public ArrayList<Plato> getPlatos(){
         return PlatoRepository.getPlatos();
     }
+
+    public Plato getPlato(int posicion){
+        return PlatoRepository.getPlato(posicion);
+    }
 }
