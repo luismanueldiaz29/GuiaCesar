@@ -9,19 +9,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.guiavalledupar.Services.SitiosServicio;
+import com.example.guiavalledupar.Services.SitioService;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
-
-import com.example.guiavalledupar.Repository.RepositorioSitio;
 
 public class Sitios extends AppCompatActivity {
     //RepositorioSitio repositorio;
     int numeroImagenes;
     CarouselView carouselView;
 
-    SitiosServicio servicio;
+    SitioService servicio;
 
 
     @Override
@@ -32,10 +30,10 @@ public class Sitios extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        //repositorio =new RepositorioSitio();
-        servicio= new SitiosServicio();
 
-        //numeroImagenes=repositorio.getArraySitios().size();
+        servicio= new SitioService();
+
+
         numeroImagenes=servicio.getSize();
 
 
@@ -51,15 +49,15 @@ public class Sitios extends AppCompatActivity {
         });
     }
 
-    //public int getImg(int position){ return servicio.getArraySitios().get((position)).imagen; }
-    //public String getNombre(int position){return servicio.getArraySitios().get(position).nombre;}
 
     public void SitiosInteres(int position) {
         android.widget.Toast toast1;
         toast1=Toast.makeText(getApplicationContext(),"Detalle de "+servicio.getNombre(position), Toast.LENGTH_SHORT);
         toast1.show();
+
+        String id=String.valueOf(servicio.getId(position));
         Intent intent= new Intent (this,detalleSitios.class);
-        intent.putExtra("img",servicio.getImg(position));
+        intent.putExtra("ID",id);
         startActivity(intent);
     }
 
