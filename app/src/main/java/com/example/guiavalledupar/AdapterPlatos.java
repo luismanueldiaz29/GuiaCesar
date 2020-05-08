@@ -13,7 +13,7 @@ import com.example.guiavalledupar.Entity.Plato;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> implements View.OnClickListener{
+public class AdapterPlatos extends RecyclerView.Adapter<AdapterPlatos.ViewHolder> implements View.OnClickListener{
 
     private View.OnClickListener listener;
 
@@ -31,7 +31,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> implements
 
     public ArrayList<Plato> platos;
 
-    public Adapter(ArrayList<Plato> platos){
+    public AdapterPlatos(ArrayList<Plato> platos){
         this.platos = platos;
     }
 
@@ -60,7 +60,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> implements
             listener.onClick(v);
         }
     }
-
 
 
     @Override

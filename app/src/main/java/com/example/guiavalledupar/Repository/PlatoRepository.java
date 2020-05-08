@@ -35,7 +35,6 @@ public class PlatoRepository {
 
         ArrayList<Plato> platos = new ArrayList<>();
 
-        ListIterator<Plato> platoListIterator;
         for (int i = 0; i < name.length; i++){
             Plato Plato = new Plato();
             Plato.Name = name[i];
@@ -43,15 +42,13 @@ public class PlatoRepository {
             Plato.Image = img[i];
             Plato.Preparation = preparation[i];
             platos.add(Plato);
-
-            Toast.makeText(this.context, Plato.Name+"plato y name "+name.length+" numero"+platos.size(), Toast.LENGTH_LONG).show();
         }
+
         return platos;
     }
 
     public Plato getPlato(int posicion){
         ArrayList<Plato> platos =  getPlatos();
-        Toast.makeText(this.context, platos.get(posicion).Name+"plato"+" numero"+platos.size(), Toast.LENGTH_LONG).show();
         return platos.get(posicion);
     }
 }

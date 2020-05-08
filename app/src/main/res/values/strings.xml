@@ -2,6 +2,7 @@
     <string name="app_name">Guia del Cesar</string>
     <string name="text_info">CONOCE MÁS SOBRE VALLEDUPAR Y SUS ALREDEDORES</string>
     <string name="descripcion">Descripción :</string>
+    <string name="string_municipio_eventos">Eventos que se realizan en los diferentes municipios del cesar</string>
 
     <!-- here is the data of the dishes -->
     <string-array name="name_plato">
@@ -54,4 +55,24 @@
             Pon a hervir el agua en una olla con la cebolla, el ajo, el cilantro, la sal, la pimienta y el comino. Agrega los plátanos y con intervalos de 10 minutos añade la papa, la yuca, la arracacha y la ahuyama. Agrega los pescados y cocina a fuego medio 20 minutos con la olla tapada. Saca los pescados y el resto de los ingredientes y sírvelos bañados con el resto de los ingredientes. Cuela el caldo y sírvelo aparte con mucho cilantro.
         </item>
     </string-array>
+
+    <string-array name="name_municipios">
+        <item>La paz</item>
+        <item>Manaure</item>
+        <item>Pueblo Bello</item>
+    </string-array>
+
+    <string-array name="Descripcion_municipios">
+        <item>
+            La Paz, es un municipio colombiano ubicado en el departamento del Cesar, en el área metropolitana de Valledupar, cuya cabecera municipal es Los Robles. Cuenta con una población de alrededor de 25.000 habitantes, es centro de una rica comarca ganadera (vacunos). Se localiza a 12 km al sur de la ciudad de Valledupar. Las almojábanas son parte importante de su gastronomía. Alberga una sede de la Universidad Nacional de Colombia.
+        </item>
+        <item>
+            Manaure Balcón del Cesar es uno de los 25 municipios que conforman el departamento del Cesar en la región Andina , Colombia. Limita al norte con La Jagua del Pilar (departamento de La Guajira), al sur y al occidente con el municipio de La Paz y al oriente con la República Bolivariana de Venezuela. Es reconocido en la región por la suavidad de su clima. Posee una precipitación anual de 1361 mm. Hace parte del Área metropolitana de Valledupar.
+        </item>
+        <item>
+            Pueblo Bello es uno de los 25 municipios colombianos que integran el Departamento del Cesar. Se encuentra sobre la Sierra Nevada de Santa Marta a una altitud de 1200 m.s.n.m. en un estrecho valle de montaña sobre un altiplano. Es un importante centro para servicios de salud y abasto para la población Indígena de la Sierra y un atractivo sitio turístico no solo para los habitantes del Cesar sino también de otras regiones de Colombia por tener en su jurisdicción la capital de la Cultura Arhuaca Nabusímake con todas las características de la cultura indígena en pleno esplendor.
+        </item>
+    </string-array>
+
+
 </resources>

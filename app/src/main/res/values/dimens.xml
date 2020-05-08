@@ -3,4 +3,7 @@
     <dimen name="Borde">15dp</dimen>
     <dimen name="height_imagen">219dp</dimen>
     <dimen name="parrafoPlato">17sp</dimen>
+    <dimen name="width_img_evento">300dp</dimen>
+    <dimen name="height_img_evento">245dp</dimen>
+    <dimen name="string_size_municipio">25sp</dimen>
 </resources>

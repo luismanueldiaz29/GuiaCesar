@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Evento(View view) {
+        Intent intent = new Intent(this, List_Evento.class);
+        startActivity(intent);
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Eventos", Toast.LENGTH_SHORT);
         toast1.show();
     }

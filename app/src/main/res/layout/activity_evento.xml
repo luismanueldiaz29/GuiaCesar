@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_circle_indicator_stroke_color"
+    tools:context=".Evento">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Borde"
+                android:background="@color/design_default_color_secondary_variant"
+                android:gravity="center"
+                android:text="@string/string_municipio_eventos"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La paz"
+                android:textSize="@dimen/string_size_municipio"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/Borde"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_img_evento"
+                android:layout_height="@dimen/height_img_evento"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/Borde"
+                android:src="@drawable/lapazcesar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manaure"
+                android:textSize="@dimen/string_size_municipio"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/Borde"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_img_evento"
+                android:layout_height="@dimen/height_imagen"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/Borde"
+                android:src="@drawable/manaure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pueblo Bello"
+                android:textSize="@dimen/string_size_municipio"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/Borde"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_img_evento"
+                android:layout_height="@dimen/height_imagen"
+                android:src="@drawable/pueblobellocesar"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:layout_margin="@dimen/Borde"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

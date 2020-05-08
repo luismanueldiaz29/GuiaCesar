@@ -26,7 +26,7 @@ public class Plato_Tipico extends AppCompatActivity {
     private ArrayList<Plato> platos;
     private PlatoService PlatoService;
     private RecyclerView recyclerViewPlatos;
-    private Adapter adapter;
+    private AdapterPlatos adapter;
     private int click;
 
     @Override
@@ -42,7 +42,7 @@ public class Plato_Tipico extends AppCompatActivity {
         recyclerViewPlatos = (RecyclerView) findViewById(R.id.ReciclerViewPlatos);
         recyclerViewPlatos.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter = new Adapter(platos);
+        adapter = new AdapterPlatos(platos);
         recyclerViewPlatos.setAdapter(adapter);
 
         adapter.setOnClickListener(new View.OnClickListener() {

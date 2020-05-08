@@ -1,0 +1,45 @@
+package com.example.guiavalledupar.Repository;
+
+import android.content.Context;
+import android.content.res.Resources;
+
+import com.example.guiavalledupar.Entity.Municipio;
+import com.example.guiavalledupar.Entity.Plato;
+import com.example.guiavalledupar.R;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class MunicipioRepository {
+
+    private Context context;
+
+    public MunicipioRepository(Context context){
+        this.context = context;
+    }
+
+    public ArrayList<Municipio> getMunicipios(){
+
+        Resources Res = this.context.getResources();
+        String[] name = Res.getStringArray(R.array.name_municipios);
+        String[] description = Res.getStringArray(R.array.Descripcion_municipios);
+        int[] img = {R.drawable.lapazcesar,R.drawable.manaure,R.drawable.pueblobellocesar};
+
+        ArrayList<Municipio> municipios = new ArrayList<>();
+
+        for (int i = 0; i < name.length; i++){
+            Municipio municipio = new Municipio();
+            municipio.Name = name[i];
+            municipio.Description = description[i];
+            municipio.img = img[i];
+            municipios.add(municipio);
+        }
+
+        return municipios;
+    }
+
+    public Municipio getMunicipio(int posicion){
+        ArrayList<Municipio> municipios =  getMunicipios();
+        return municipios.get(posicion);
+    }
+}

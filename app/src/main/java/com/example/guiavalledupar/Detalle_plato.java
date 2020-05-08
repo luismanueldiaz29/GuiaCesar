@@ -1,5 +1,6 @@
 package com.example.guiavalledupar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.guiavalledupar.Entity.Plato;
@@ -25,6 +26,8 @@ public class Detalle_plato extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_plato);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         tvNamePlato = findViewById(R.id.tvNamePlato);
         tvPlatoDescription = findViewById(R.id.tvPlatoDescription);
@@ -37,9 +40,7 @@ public class Detalle_plato extends AppCompatActivity {
         if(getIntent().getStringExtra("posicion") != null){
             int pocision = Integer.parseInt(getIntent().getStringExtra("posicion"));
             plato = platoService.getPlato(pocision);
-
             DetallePlato(plato);
-
             Toast.makeText(this, plato.Name+" clicked in detalle", Toast.LENGTH_LONG).show();
         }
     }

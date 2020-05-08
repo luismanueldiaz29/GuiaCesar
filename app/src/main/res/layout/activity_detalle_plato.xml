@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Detalle_plato">
+    tools:context=".Detalle_plato"
+    android:background="@color/default_circle_indicator_stroke_color">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -49,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="Preparacion :"
+                android:text="Preparacion"
                 android:textStyle="bold"
                 android:layout_margin="@dimen/Borde"
                 />
