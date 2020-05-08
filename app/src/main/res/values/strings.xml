@@ -74,5 +74,33 @@
         </item>
     </string-array>
 
-
+    <string-array name="desciption_eventos">
+        <item>
+            -Festival de la Paletilla y Fiesta Patronal de la Candelaria. ...\n
+            -Fiesta Patronal de San Juan Bosco. ...\n
+            -Fiesta Patronal de San Juan Crisóstomo. ...\n
+            -Fiesta Patronal de San José ...\n
+            -Carnavales. ...\n
+            -Semana Santa en Valledupar. ...\n
+            -Festival Mi Pedazo de Acordeón. ...\n
+            -Fiesta del Corpus Cristi.\n
+        </item>
+        <item>
+            -Fiestas Patronales de la Virgen del Carmen:\n A una semana de dar inicio a las Fiestas Patronales de la Virgen del Carmen y el Festival del Agua, el Café y las Artesanías, proyectadas del 13 al 16 de julio en el municipio de Pueblo Bello, Cesar, el Alcalde Juan Francisco Villazón Tafur indicó que están dadas todas las condiciones para realizar el evento cultural.
+            \n\n
+            -El Festival del Agua, el Café y las Artesanías
+            \n\n
+            -concursos de Acordeón Infantil, Canción Inédita y Piqueria como aporte a nuestro folclor
+        </item>
+        <item>
+            -Festival de la Paletilla y Fiesta Patronal de la Candelaria. ...\n
+            -Fiesta Patronal de San Juan Bosco. ...\n
+            -Fiesta Patronal de San Juan Crisóstomo. ...\n
+            -Fiesta Patronal de San José ...\n
+            -Carnavales. ...\n
+            -Semana Santa en Valledupar. ...\n
+            -Festival Mi Pedazo de Acordeón. ...\n
+            -Fiesta del Corpus Cristi.\n
+        </item>
+    </string-array>
 </resources>

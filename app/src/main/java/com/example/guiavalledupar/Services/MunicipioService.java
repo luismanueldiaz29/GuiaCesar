@@ -19,7 +19,7 @@ public class MunicipioService {
         return municipioRepository.getMunicipios();
     }
 
-    public Municipio getPlato(int posicion){
+    public Municipio getMunicipio(int posicion){
         return municipioRepository.getMunicipio(posicion);
     }
 

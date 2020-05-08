@@ -28,6 +28,7 @@
                 android:textSize="25dp"/>
 
             <TextView
+                android:id="@+id/tvNombreMunicipio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="La paz"
@@ -37,47 +38,47 @@
                 android:layout_marginTop="@dimen/Borde"/>
 
             <ImageView
+                android:id="@+id/ivEventoImage"
                 android:layout_width="@dimen/width_img_evento"
                 android:layout_height="@dimen/height_img_evento"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
-                android:layout_margin="@dimen/Borde"
+                android:layout_marginTop="@dimen/Borde"
                 android:src="@drawable/lapazcesar" />
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Manaure"
-                android:textSize="@dimen/string_size_municipio"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/Borde"/>
+                android:orientation="vertical"
+                android:layout_margin="@dimen/Borde">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    android:textSize="@dimen/string_size_municipio"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/Borde"/>
 
-            <ImageView
-                android:layout_width="@dimen/width_img_evento"
-                android:layout_height="@dimen/height_imagen"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                android:layout_margin="@dimen/Borde"
-                android:src="@drawable/manaure"/>
+                <TextView
+                    android:id="@+id/tvdescripcionMunicipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/parrafoPlato"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pueblo Bello"
-                android:textSize="@dimen/string_size_municipio"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/Borde"/>
-
-            <ImageView
-                android:layout_width="@dimen/width_img_evento"
-                android:layout_height="@dimen/height_imagen"
-                android:src="@drawable/pueblobellocesar"
-                android:layout_gravity="center"
-                android:scaleType="center"
-                android:layout_margin="@dimen/Borde"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eventos"
+                    android:textSize="@dimen/string_size_municipio"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/Borde"/>
+                <TextView
+                    android:id="@+id/tvEventoDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/parrafoPlato"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

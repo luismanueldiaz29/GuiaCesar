@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -41,8 +42,15 @@ public class List_Evento extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String posicion = ReciclerViewEvento.getChildAdapterPosition(v)+"";
+                DetalleEvento(posicion);
                 Toast.makeText(getApplicationContext(), "click in "+posicion, Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void DetalleEvento(String posicion){
+        Intent intent = new Intent(this, Evento.class);
+        intent.putExtra("PEvento", posicion);
+        startActivity(intent);
     }
 }
