@@ -26,6 +26,7 @@ public class Sitios extends AppCompatActivity {
     private TextView nameMunicipio;
     private MunicipioService municipioService;
     private Municipio municipio;
+    private TextView historiaMunicipio;
 
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
     int[] ManuereImg = {R.drawable.manaure, R.drawable.manaure2, R.drawable.manaure3, R.drawable.manaure4, R.drawable.manaure5};
@@ -44,11 +45,13 @@ public class Sitios extends AppCompatActivity {
         municipioService = new MunicipioService(this);
 
         nameMunicipio = (TextView)findViewById(R.id.nameMunicipio);
+        historiaMunicipio = (TextView)findViewById(R.id.historiaMunicipio);
 
         if(getIntent().getStringExtra("PMunicipio") != null){
             int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
             municipio = municipioService.getMunicipio(pocision);
             nameMunicipio.setText(municipio.Name);
+            historiaMunicipio.setText(municipio.Description);
         }
 
         servicio= new SitioService();
