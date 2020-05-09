@@ -1,5 +1,6 @@
 package com.example.guiavalledupar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,6 +27,8 @@ public class Municipios_Sitios extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_municipios__sitios);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         municipioService = new MunicipioService(this);
         municipios = municipioService.getMunicipios();
@@ -47,7 +50,7 @@ public class Municipios_Sitios extends AppCompatActivity {
     }
     public void DetalleSitio(String posicion){
         Intent intent = new Intent(this, Sitios.class);
-        //intent.putExtra("PEvento", posicion);
+        intent.putExtra("PMunicipio", posicion);
         startActivity(intent);
     }
 

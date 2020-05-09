@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Municipios_Sitios"></activity>
+
+        <activity android:name=".Municipios_Sitios"
+            android:parentActivityName=".MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity android:name=".Emergencia" />
         <activity
             android:name=".List_Evento"
@@ -34,10 +39,10 @@
         </activity>
         <activity
             android:name=".detalleSitios"
-            android:parentActivityName=".Sitios">
+            android:parentActivityName=".Municipios_Sitios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Sitios" />
+                android:value=".Municipios_Sitios" />
         </activity>
         <activity android:name=".MainActivity" />
         <activity
@@ -49,10 +54,10 @@
         </activity>
         <activity
             android:name=".Sitios"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Municipios_Sitios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Municipios_Sitios" />
         </activity>
         <activity android:name=".Splash">
             <intent-filter>

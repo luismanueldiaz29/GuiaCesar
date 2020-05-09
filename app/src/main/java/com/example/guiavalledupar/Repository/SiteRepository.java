@@ -18,6 +18,7 @@ public class SiteRepository {
     }
 
     public void generateMockData(){
+
         SiteOfInterest site= new SiteOfInterest();
         site.image =R.drawable.glorietadelosgallos;
         site.id=111;
@@ -29,6 +30,8 @@ public class SiteRepository {
                 "Esta obra escultórica representa una de las tradiciones de la región como lo es la riña de gallo fino," +
                 " actividad representativa en épocas de jolgorio y tradicionalmente en cualquier concentración popular.";
         siteArray.add(site);
+
+
         SiteOfInterest site2= new SiteOfInterest();
         site2.image = R.drawable.glorietamusicos;
         site2.id=222;
@@ -44,6 +47,9 @@ public class SiteRepository {
                 " es una imagen muy llamativa al ojo humano, que hace referencia a tres hombres sentados sobre una base redonda, espalda con " +
                 "espalda tocando los diferentes instrumentos musicales. Los tres personajes aparecen con pantalones remangados hasta la rodilla y sin camisas.";
         siteArray.add(site2);
+
+
+
         SiteOfInterest site3= new SiteOfInterest();
         site3.image =R.drawable.glorietajuglares;
         site3.id=333;
@@ -100,5 +106,7 @@ public class SiteRepository {
                 "las primeras bailadores del pilón vallenato.";
         siteArray.add(site6);
     }
+
+
 
 }

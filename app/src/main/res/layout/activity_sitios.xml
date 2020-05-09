@@ -23,6 +23,7 @@
                 android:src="@drawable/encsitio" />
 
             <TextView
+                android:id="@+id/nameMunicipio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -33,17 +34,20 @@
                 android:textColor="@android:color/black"
                 android:textSize="30dp"
                 android:textStyle="normal" />
+
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
-                android:layout_height="474dp"
+                android:layout_height="250dp"
                 android:paddingBottom="@dimen/Borde"
                 app:fillColor="#FFFFFFFF"
                 app:pageColor="#00000000"
                 app:radius="6dp"
                 app:slideInterval="3000"
                 app:strokeColor="#FF777777"
-                app:strokeWidth="1dp" />
+                app:strokeWidth="1dp"
+                android:layout_margin="@dimen/Borde"
+                />
 
 
         </LinearLayout>

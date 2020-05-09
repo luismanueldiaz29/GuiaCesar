@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         //textInfoCarrusel = findViewById(R.id.infocarrusel);
 
+
         carouselView = (CarouselView) findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
-
         carouselView.setImageListener(imageListener);
 
         carouselView.setImageClickListener(new ImageClickListener() {

@@ -7,22 +7,37 @@
     tools:context=".Municipios_Sitios"
     android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/Borde"
-        android:background="@color/design_default_color_secondary_variant"
-        android:gravity="center"
-        android:text="Municipios del Cesar"
-        android:textColor="@color/cardview_light_background"
-        android:padding="@dimen/Borde"
-        android:textSize="25dp"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/ReciclerViewMunicipio"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/encsitio" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/Borde"
+                android:background="@color/design_default_color_secondary_variant"
+                android:gravity="center"
+                android:text="Municipios del Cesar"
+                android:textColor="@color/cardview_light_background"
+                android:padding="@dimen/Borde"
+                android:textSize="25dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ReciclerViewMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
