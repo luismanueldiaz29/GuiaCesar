@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void SitiosInteres(View view) {
-        Intent intent = new Intent(this, Sitios.class);
+        Intent intent = new Intent(this, Municipios_Sitios.class);
         startActivity(intent);
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Sistios de interes", Toast.LENGTH_SHORT);
         toast1.show();

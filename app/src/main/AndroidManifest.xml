@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".List_Evento">
+        <activity android:name=".Municipios_Sitios"></activity>
+        <activity android:name=".Emergencia" />
+        <activity
+            android:name=".List_Evento"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Evento">android:parentActivityName=".List_Evento">
+            android:name=".Evento"
+            android:parentActivityName=".List_Evento">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".List_Evento" />
