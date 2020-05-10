@@ -28,6 +28,7 @@ public class Sitios extends AppCompatActivity {
     private Municipio municipio;
     private TextView historiaMunicipio;
 
+    int[] valleduparImg = {R.drawable.valledupar, R.drawable.valledupar2, R.drawable.valledupar3, R.drawable.valledupar4};
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
     int[] ManuereImg = {R.drawable.manaure, R.drawable.manaure2, R.drawable.manaure3, R.drawable.manaure4, R.drawable.manaure5};
     int[] PuebloBelloImg = {R.drawable.pueblobellocesar, R.drawable.pueblobello, R.drawable.pueblobello3, R.drawable.pueblobello4};
@@ -82,11 +83,13 @@ public class Sitios extends AppCompatActivity {
     };
 
     public int[] Imagen(int pocision){
-        if (pocision == 0){
-            return LapazImg;
+        if(pocision == 0){
+            return valleduparImg;
         }else if (pocision == 1){
-            return ManuereImg;
+            return LapazImg;
         }else if (pocision == 2){
+            return ManuereImg;
+        }else if (pocision == 3){
             return PuebloBelloImg;
         }
         return null;

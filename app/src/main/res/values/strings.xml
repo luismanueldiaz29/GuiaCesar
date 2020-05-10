@@ -31,6 +31,7 @@
         </item>
     </string-array>
 
+
     <string-array name="preparation_plato">
         <item>
             Prepare una salmuera con el jugo de limón, el vinagre, el aceite, los ajos, las cebollas, las yerbas y los aliños. Revuelva bien y ponga las presas del chivo a adobar por unas horas. Asiste las brasas al vivo y coloque las presas sobre una parrilla. Aselas por ambos lados hasta que estén doradas, rociandoles la salsa por encima. Acompáñelo con yuca frita y arroz blanco.
@@ -57,12 +58,18 @@
     </string-array>
 
     <string-array name="name_municipios">
+        <item>Valledupar</item>
         <item>La paz</item>
         <item>Manaure</item>
         <item>Pueblo Bello</item>
     </string-array>
 
     <string-array name="Descripcion_municipios">
+        <item>
+            Valledupar, también llamada Ciudad de los Santos Reyes del Valle de Upar, es un municipio colombiano, capital del departamento del Cesar. Es la cabecera del municipio homónimo, el cual tiene una extensión de 4493 km², 493 342 habitantes y junto a su área metropolitana reúne 677 9411​ habitantes; está conformado por 25 corregimientos y 102 veredas.
+            \n\n
+            Está ubicada al nororiente de la Costa Atlántica colombiana, a orillas del río Guatapurí, en el valle del río Cesar formado por la Sierra Nevada de Santa Marta al occidente y la serranía del Perijá al oriente.
+        </item>
         <item>
             La Paz, es un municipio colombiano ubicado en el departamento del Cesar, en el área metropolitana de Valledupar, cuya cabecera municipal es Los Robles. Cuenta con una población de alrededor de 25.000 habitantes, es centro de una rica comarca ganadera (vacunos). Se localiza a 12 km al sur de la ciudad de Valledupar. Las almojábanas son parte importante de su gastronomía. Alberga una sede de la Universidad Nacional de Colombia.
             \n\nMas información: en https://es.wikipedia.org/wiki/La_Paz_(Cesar)
@@ -79,6 +86,9 @@
     </string-array>
 
     <string-array name="desciption_eventos">
+        <item>
+            El Festival de la Leyenda Vallenata, llamado también Festival Vallenato, es el evento más importante del vallenato.1​ Se celebra anualmente a finales de abril o principios de mayo desde 1968 en Valledupar, y es organizado por la Fundación Festival de la Leyenda Vallenata, la cual vela por la defensa y difusión de la expresiones folclóricas y populares que rodean la música vallenata. El festival busca preservar cuatro de los cinco aires o ritmos del vallenato: paseo, merengue, son y puya.2​ Además, el género de la piqueria, la parranda, la poesía campesina, cuentos, leyendas, mitos, tradición oral, expresiones literarias, socioculturales y artísticas asociadas al vallenato
+        </item>
         <item>
             -Festival de la Paletilla y Fiesta Patronal de la Candelaria. ...\n
             -Fiesta Patronal de San Juan Bosco. ...\n
