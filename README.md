@@ -26,13 +26,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+# Installation:
+
+1. Open the file ‚ÄúGuiaCesar.apk‚Äù to begin the process
 
 
-Installation:
-1. Open the file ìGuiaCesar.apkî to begin the process
+![install](https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%201.jpeg)
 
-2.The app doesnít need any permission. So just press Install
-
-3. Wait for the bar to complete and the installation process itís finish
+2.The app doesn‚Äôt need any permission. So just press Install
 
 
+![permission](https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%202.jpeg)
+
+3. Wait for the bar to complete and the installation process it‚Äôs finish
+
+
+![installation](https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%203.jpeg)
