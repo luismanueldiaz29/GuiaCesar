@@ -24,3 +24,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+
+Installation:
+1. Open the file “GuiaCesar.apk” to begin the process
+
+2.The app doesn’t need any permission. So just press Install
+
+3. Wait for the bar to complete and the installation process it’s finish
+
+
