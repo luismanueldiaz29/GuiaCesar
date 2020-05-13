@@ -87,34 +87,45 @@
 
     <string-array name="desciption_eventos">
         <item>
-            El Festival de la Leyenda Vallenata, llamado también Festival Vallenato, es el evento más importante del vallenato.1​ Se celebra anualmente a finales de abril o principios de mayo desde 1968 en Valledupar, y es organizado por la Fundación Festival de la Leyenda Vallenata, la cual vela por la defensa y difusión de la expresiones folclóricas y populares que rodean la música vallenata. El festival busca preservar cuatro de los cinco aires o ritmos del vallenato: paseo, merengue, son y puya.2​ Además, el género de la piqueria, la parranda, la poesía campesina, cuentos, leyendas, mitos, tradición oral, expresiones literarias, socioculturales y artísticas asociadas al vallenato
+            En valledupar se realiza anual mente el Festival de la Leyenda Vallenata, llamado también Festival Vallenato, es el evento más importante del vallenato.1​ Se celebra anualmente a finales de abril o principios de mayo desde 1968 en Valledupar, y es organizado por la Fundación Festival de la Leyenda Vallenata, la cual vela por la defensa y difusión de la expresiones folclóricas y populares que rodean la música vallenata. El festival busca preservar cuatro de los cinco aires o ritmos del vallenato: paseo, merengue, son y puya.2​ Además, el género de la piqueria, la parranda, la poesía campesina, cuentos, leyendas, mitos, tradición oral, expresiones literarias, socioculturales y artísticas asociadas al vallenato\n\n
+            Feria del dulce en la plaza Alfonso lopez\n
+            Durante la Semana Santa, 65 puestos de dulces instalados en la recién renovada Plaza Alfonso López atendieron a miles de visitantes entre locales y turistas
         </item>
         <item>
-            -Festival de la Paletilla y Fiesta Patronal de la Candelaria. ...\n
-            -Fiesta Patronal de San Juan Bosco. ...\n
-            -Fiesta Patronal de San Juan Crisóstomo. ...\n
-            -Fiesta Patronal de San José ...\n
-            -Carnavales. ...\n
-            -Semana Santa en Valledupar. ...\n
-            -Festival Mi Pedazo de Acordeón. ...\n
-            -Fiesta del Corpus Cristi.\n
+            La paz\n\n
+            Festival Cultural La Paz en el Mundo\n
+            Los orígenes se remontan a la necesidad de algunos jóvenes por impulsar el acercamiento de nuevas formas de expresión artísticas y culturales en el municipio de Los Reyes La Paz.
         </item>
         <item>
-            -Fiestas Patronales de la Virgen del Carmen:\n A una semana de dar inicio a las Fiestas Patronales de la Virgen del Carmen y el Festival del Agua, el Café y las Artesanías, proyectadas del 13 al 16 de julio en el municipio de Pueblo Bello, Cesar, el Alcalde Juan Francisco Villazón Tafur indicó que están dadas todas las condiciones para realizar el evento cultural.
-            \n\n
-            -El Festival del Agua, el Café y las Artesanías
-            \n\n
-            -concursos de Acordeón Infantil, Canción Inédita y Piqueria como aporte a nuestro folclor
+            MANAURE\n\n
+            FESTIVAL Y REINADO DE LA SAL, GAS Y FLAMENCOS\n
+            El Festival y Reinado de la Sal, Gas y Flamenco, da a conocer los aspectos culturales, industriales, comerciales y turísticos de esta región. Los cuales son el impulsor del desarrollo de Manaure y sus habitantes.\n
+            Se realiza cada año en el mes de junio.
         </item>
         <item>
-            -Festival de la Paletilla y Fiesta Patronal de la Candelaria. ...\n
-            -Fiesta Patronal de San Juan Bosco. ...\n
-            -Fiesta Patronal de San Juan Crisóstomo. ...\n
-            -Fiesta Patronal de San José ...\n
-            -Carnavales. ...\n
-            -Semana Santa en Valledupar. ...\n
-            -Festival Mi Pedazo de Acordeón. ...\n
-            -Fiesta del Corpus Cristi.\n
+            PUEBLO BELLO\n\n
+            Fiestas Patronales Virgen del Carmen\n
+            Cada 16 de julio los católicos le rinden tributo a Nuestra Señora del Carmen, patrona de los conductores, de los Bomberos y la reina de las Fuerzas Armadas de Colombia.\n
+            realizando siempre una caravana que se hace partiendo de las distintas veredas del Municipio de Granada, hasta llegar al parque principal que por lo general se realiza un misa y después se dispone el Padre de la Parroquia a dar bendiciones conductores y sus vehículos.
+        </item>
+    </string-array>
+
+    <string-array name="municipio_sitio">
+        <item>
+            Sin duda alguna, el mejor plan es visitar la ciudad en épocas del Festival Vallenato, su atractivo turístico destacado. Además de esto, una actividad ideal para toda la familia es recorrer las glorietas, cuyo principal atractivo son los monumentos. En la avenida Simón Bolívar, una de las más largas de la ciudad, se pueden ver las esculturas del Cacique Upar, el Folclor Vallenato y Los Gallos.
+        </item>
+        <item>
+            A tan solo 15 minutos de Valledupar se encuentra La Paz, tierra de compositores y almojábanas, pero que hoy en día basa su economía en la venta de gasolina de contrabando. Pese a ello cuenta con una gran variedad de atractivos tanto naturales como culturales, entre los que se destacan las calles empedradas de San José de Oriente, el Festival de la Almojabanera y el Festival Voces y Canciones.La almojábana es entonces lo más representativo de la gastronomía local y suele acompañarse muy bien por ricos granizados de mora y guanábana que se pueden encontrar sobre la vía nacional.
+        </item>
+        <item>
+            Manaure Balcón del Cesar ha sido por excelencia el Balcón Turístico del Cesar, se caracteriza por la gran hermosura de su vegetación, la frescura de su medio ambiente la belleza de su río y sobre todo por la amabilidad de sus gentes. Manaure ha sido Musa de inspiración de viejos juglares del vallenato como son. el viejo Emiliano Zuleta, Poncho Cotes, Escalona, Andrés Becerra, Leandro Díaz, Juan Manuel Muegues y muchos otros, que al llegar a esta tierra se prendaron del encanto mágico de su entorno dedicándole sus mejores canciones.
+        </item>
+        <item>
+            A una hora y media de Valledupar, Cesar, se encuentra una joya turística y uno de los pueblos más tranquilos para descansar en Colombia: Pueblo Bello.\n
+
+            Con una temperatura templada entre 16 y 22ºC Pueblo Bello es el lugar ideal no solo para desconectarse y descansar, sino para conocer una parte de la historia del departamento en el que reina el vallenato.\n
+
+            Desde Valledupar, tan solo debe tomarse la carretera principal donde encontrará la ruta para empezar a subir hasta los 1200 metros sobre el nivel del mar donde se encuentra Pueblo Bello.
         </item>
     </string-array>
 </resources>

@@ -27,6 +27,8 @@ public class Sitios extends AppCompatActivity {
     private MunicipioService municipioService;
     private Municipio municipio;
     private TextView historiaMunicipio;
+    private TextView sitio;
+    private  TextView queencntrar;
 
     int[] valleduparImg = {R.drawable.valledupar, R.drawable.valledupar2, R.drawable.valledupar3, R.drawable.valledupar4};
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
@@ -47,12 +49,16 @@ public class Sitios extends AppCompatActivity {
 
         nameMunicipio = (TextView)findViewById(R.id.nameMunicipio);
         historiaMunicipio = (TextView)findViewById(R.id.historiaMunicipio);
+        sitio = (TextView)findViewById(R.id.sitio);
+        queencntrar = (TextView)findViewById(R.id.queencntrar);
 
         if(getIntent().getStringExtra("PMunicipio") != null){
             int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
             municipio = municipioService.getMunicipio(pocision);
             nameMunicipio.setText(municipio.Name);
             historiaMunicipio.setText(municipio.Description);
+            sitio.setText(municipio.Sitio);
+            queencntrar.setText("¿ Que puedes encontrar en "+municipio.Name+" ?");
         }
 
         servicio= new SitioService();
@@ -68,7 +74,7 @@ public class Sitios extends AppCompatActivity {
         carouselView.setImageClickListener(new ImageClickListener() {
             @Override
             public void onClick(int position) {
-                SitiosInteres(position);
+                //SitiosInteres(position);
             }
         });
     }

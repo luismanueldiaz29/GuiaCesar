@@ -86,17 +86,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_imagen"
                     android:layout_marginBottom="@dimen/Borde"
-                    android:onClick="Parques"
+                    android:onClick="PlatosTipicos"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/parques"></ImageView>
+                    android:src="@drawable/platostipicos"/>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_imagen"
                     android:layout_marginBottom="@dimen/Borde"
-                    android:onClick="PlatosTipicos"
+                    android:onClick="Parques"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/platostipicos"></ImageView>
+                    android:src="@drawable/parques"></ImageView>
+
+
 
                 <ImageView
                     android:layout_width="match_parent"

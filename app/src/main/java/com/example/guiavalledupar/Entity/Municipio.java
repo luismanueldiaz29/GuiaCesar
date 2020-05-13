@@ -5,4 +5,5 @@ public class Municipio {
     public String Name;
     public String Description;
     public String Evento;
+    public String Sitio;
 }

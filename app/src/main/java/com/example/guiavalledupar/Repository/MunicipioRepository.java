@@ -24,6 +24,7 @@ public class MunicipioRepository {
         String[] name = Res.getStringArray(R.array.name_municipios);
         String[] description = Res.getStringArray(R.array.Descripcion_municipios);
         int[] img = {R.drawable.valledupar,R.drawable.lapazcesar,R.drawable.manaure,R.drawable.pueblobellocesar};
+        String[] sitio = Res.getStringArray(R.array.municipio_sitio);
         String[] eventos = Res.getStringArray(R.array.desciption_eventos);
 
         ArrayList<Municipio> municipios = new ArrayList<>();
@@ -34,6 +35,7 @@ public class MunicipioRepository {
             municipio.Description = description[i];
             municipio.Evento = eventos[i];
             municipio.img = img[i];
+            municipio.Sitio = sitio[i];
             municipios.add(municipio);
         }
 

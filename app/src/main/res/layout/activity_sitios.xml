@@ -70,9 +70,25 @@
                 android:autoLink="web"
                 />
             <TextView
+                android:id="@+id/queencntrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="¿Que encontraras aqui?"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/Borde"
                 />
+
+            <TextView
+                android:id="@+id/sitio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/parrafoPlato"
+                android:text="@string/text_info"
+                android:layout_marginBottom="@dimen/Borde"/>
+
         </LinearLayout>
 
     </ScrollView>
