@@ -1,7 +1,6 @@
 # GuiaCesar
+
 Description
-
-
 
 MIT License
 
@@ -27,12 +26,21 @@ SOFTWARE.
 
 
 
+# Installation:
+<br>
+once you have downloaded the application perform the following steps
+<br>
+1. Open the file ‚ÄúGuiaCesar.apk‚Äù to begin the process
+<br><br>
 
-Installation:
-1. Open the file ìGuiaCesar.apkî to begin the process
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%201.jpeg" width="350"/></p> 
 
-2.The app doesnít need any permission. So just press Install
+2.The app doesn‚Äôt need any permission. So just press Install
+<br><br>
 
-3. Wait for the bar to complete and the installation process itís finish
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%202.jpeg" width="350"/></p> 
 
+3. Wait for the bar to complete and the installation process it‚Äôs finish
+<br><br>
 
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%203.jpeg" width="350"/></p> 
