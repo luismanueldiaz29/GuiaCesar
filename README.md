@@ -1,4 +1,4 @@
-# GuiaCesar
+# Guia del Cesar
 
 Description
 
@@ -24,6 +24,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+# Compilation:
+<br> 
+ To compile and execute the code of the application
+<br>
+1. Clone the source code from the repository on Git Hub platform on the next link https://github.com/luismanueldiaz29/GuiaCesar.
+<br><br>
+2. Open the folder “GuiaCesar” with Android Studio.
+<br><br>
+3. Wait for the gradle to scan and build the project.
+<br><br>
+4. The app it’s ready to build the project 
 
 
 # Installation:
