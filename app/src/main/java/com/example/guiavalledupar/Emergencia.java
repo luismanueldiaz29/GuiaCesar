@@ -1,7 +1,10 @@
 package com.example.guiavalledupar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -58,8 +61,7 @@ public class Emergencia extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        adapter = new AdapterMunicipioApi(municipios);
-                        lista.setAdapter(adapter);
+                        setearAdapter();
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -70,6 +72,26 @@ public class Emergencia extends AppCompatActivity {
         this.queue.add(request);
     }
 
+
+    private void setearAdapter(){
+        adapter=new AdapterMunicipioApi(municipios);
+        lista.setAdapter(adapter);
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String posicion = lista.getChildAdapterPosition(v)+"";
+                mostrarHospitales(posicion);
+            }
+        });
+    }
+
+private void mostrarHospitales(String posicion){
+    Intent intent = new Intent(this, Hospitales.class);
+    int posInt=Integer.parseInt(posicion);
+    String muni=municipios.get(posInt).nombre;
+    intent.putExtra("PMunicipio", muni);
+    startActivity(intent);
+}
 
 
 }
