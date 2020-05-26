@@ -77,5 +77,7 @@ public class MainActivity extends AppCompatActivity {
     public void Emergencias(View view) {
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Emergencias", Toast.LENGTH_SHORT);
         toast1.show();
+        Intent intent =new Intent(this,Emergencia.class);
+        startActivity(intent);
     }
 }
