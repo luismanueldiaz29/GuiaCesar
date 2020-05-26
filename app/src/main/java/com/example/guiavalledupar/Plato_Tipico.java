@@ -8,18 +8,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.guiavalledupar.Adapters.AdapterPlatos;
 import com.example.guiavalledupar.Entity.Plato;
 import com.example.guiavalledupar.Services.PlatoService;
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
-import com.synnapps.carouselview.ImageListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Plato_Tipico extends AppCompatActivity {
 
