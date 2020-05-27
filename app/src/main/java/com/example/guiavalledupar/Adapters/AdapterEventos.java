@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.guiavalledupar.Entity.Municipio;
-import com.example.guiavalledupar.Entity.Plato;
+import com.example.guiavalledupar.R;
 
 import java.util.ArrayList;
 

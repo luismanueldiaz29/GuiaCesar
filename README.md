@@ -44,14 +44,14 @@ once you have downloaded the application perform the following steps
 1. Open the file “GuiaCesar.apk” to begin the process
 <br><br>
 
-<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%201.jpeg" width="350"/></p> 
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivouno.jpeg" width="350"/></p> 
 
 2.The app doesn’t need any permission. So just press Install
 <br><br>
 
-<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%202.jpeg" width="350"/></p> 
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivodos.jpeg" width="350"/></p> 
 
 3. Wait for the bar to complete and the installation process it’s finish
 <br><br>
 
-<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivo%203.jpeg" width="350"/></p> 
+<p align="center"> <img src="https://github.com/luismanueldiaz29/GuiaCesar/blob/master/app/src/main/res/drawable/archivotres.jpeg" width="350"/></p> 

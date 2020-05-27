@@ -35,4 +35,7 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.1'
     //Libreria para implementar el carrusel
     implementation 'com.synnapps:carouselview:0.1.5'
+
+    //para implementar API
+    implementation 'com.mcxiaoke.volley:library:1.0.+'
 }

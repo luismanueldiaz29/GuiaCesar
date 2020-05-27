@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Emergencia">
+    android:orientation="vertical"
+    tools:context=".Hospitales">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reciclerMApi"
+        android:id="@+id/listaHospitalesAPI"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
