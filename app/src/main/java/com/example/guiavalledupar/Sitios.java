@@ -7,13 +7,17 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.guiavalledupar.Adapters.ModalBottomSheet;
 import com.example.guiavalledupar.Entity.Municipio;
 import com.example.guiavalledupar.Services.MunicipioService;
 import com.example.guiavalledupar.Services.SitioService;
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
@@ -29,6 +33,8 @@ public class Sitios extends AppCompatActivity {
     private TextView historiaMunicipio;
     private TextView sitio;
     private  TextView queencntrar;
+    private FloatingActionButton buttonRecordatorio;
+    private FloatingActionButton btnConsultCalendar;
 
     int[] valleduparImg = {R.drawable.valledupar, R.drawable.valledupar2, R.drawable.valledupar3, R.drawable.valledupar4};
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
@@ -51,6 +57,8 @@ public class Sitios extends AppCompatActivity {
         historiaMunicipio = (TextView)findViewById(R.id.historiaMunicipio);
         sitio = (TextView)findViewById(R.id.sitio);
         queencntrar = (TextView)findViewById(R.id.queencntrar);
+        buttonRecordatorio = findViewById(R.id.btnCalendar);
+        btnConsultCalendar = findViewById(R.id.btnConsultCalendar);
 
         if(getIntent().getStringExtra("PMunicipio") != null){
             int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
@@ -77,6 +85,34 @@ public class Sitios extends AppCompatActivity {
                 //SitiosInteres(position);
             }
         });
+
+        buttonRecordatorio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarSBDialog(R.layout.recordatorio);
+            }
+        });
+
+        btnConsultCalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarRecordatorios();
+            }
+        });
+    }
+
+    private void lanzarRecordatorios(){
+        Intent intent = new Intent(Intent.ACTION_EDIT);
+        intent.setType("vnd.android.cursor.item/event");
+        startActivity(intent);
+    }
+
+    private void lanzarSBDialog(int layoutStyle) {
+        BottomSheetDialogFragment bottomSheetDialogFragment = new ModalBottomSheet(layoutStyle);
+        //si esta en FALSE obliga al usuario a pulsar un boton
+        //bottomSheetDialogFragment.setCancelable(false);
+        bottomSheetDialogFragment.setShowsDialog(true);
+        bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
     }
 
 
