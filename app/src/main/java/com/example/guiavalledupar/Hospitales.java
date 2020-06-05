@@ -12,7 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.guiavalledupar.Adapters.AdapterHospitalAPI;
+import com.example.guiavalledupar.Adapters.AdapterServiceAPI;
 import com.example.guiavalledupar.Entity.HospitalApi;
 import com.example.guiavalledupar.Entity.HotelApi;
 import com.example.guiavalledupar.Entity.ServicioApi;
@@ -29,7 +29,7 @@ public class Hospitales extends AppCompatActivity {
     private RequestQueue queue;
     private ArrayList<ServicioApi> servicioApis;
     private RecyclerView lista;
-    private AdapterHospitalAPI adapter;
+    private AdapterServiceAPI adapter;
     private String municipio;
     private String URL;
     private String URL2;
@@ -88,12 +88,13 @@ public class Hospitales extends AppCompatActivity {
                                 hotel.direction=jsonObject.getString(HotelApi.jsonDirection);
                                 hotel.phone=jsonObject.getString(HotelApi.jsonPhone);
                                 hotel.municipio=jsonObject.getString(HotelApi.jsonMuni);
+                                hotel.tipo=ServicioApi.HOTEL;
                                 servicioApis.add(hotel);
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        adapter = new AdapterHospitalAPI(servicioApis);
+                        adapter = new AdapterServiceAPI(servicioApis);
                         lista.setAdapter(adapter);
                     }
                 }, new Response.ErrorListener() {
@@ -120,6 +121,7 @@ public class Hospitales extends AppCompatActivity {
                                 hospital.direction=jsonObject.getString(HospitalApi.jsonDirection);
                                 hospital.phone=jsonObject.getString(HospitalApi.jsonPhone);
                                 hospital.municipio=jsonObject.getString(HospitalApi.jsonMuni);
+                                hospital.tipo=ServicioApi.HOSPITAL;
                                 servicioApis.add(hospital);
                             }
                         } catch (JSONException e) {
