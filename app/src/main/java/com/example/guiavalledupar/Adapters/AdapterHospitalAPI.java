@@ -8,17 +8,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.guiavalledupar.Entity.HospitalApi;
+import com.example.guiavalledupar.Entity.ServicioApi;
 import com.example.guiavalledupar.R;
 
 import java.util.ArrayList;
 
 public class AdapterHospitalAPI extends RecyclerView.Adapter<AdapterHospitalAPI.ViewHolder>implements View.OnClickListener {
     private View.OnClickListener listener;
-    ArrayList<HospitalApi>hospitales=new ArrayList<>();
+    ArrayList<ServicioApi> servicio =new ArrayList<>();
 
-    public AdapterHospitalAPI(ArrayList<HospitalApi> hospi) {
-        this.hospitales =hospi ;
+    public AdapterHospitalAPI(ArrayList<ServicioApi> hospi) {
+        this.servicio =hospi ;
     }
 
     @Override
@@ -44,14 +44,14 @@ public class AdapterHospitalAPI extends RecyclerView.Adapter<AdapterHospitalAPI.
 
     @Override
     public void onBindViewHolder(@NonNull AdapterHospitalAPI.ViewHolder holder, int position) {
-        holder.name.setText(hospitales.get(position).name);
-        holder.direction.setText(hospitales.get(position).direction);
-        holder.phone.setText(hospitales.get(position).phone);
+        holder.name.setText(servicio.get(position).name);
+        holder.direction.setText(servicio.get(position).direction);
+        holder.phone.setText(servicio.get(position).phone);
     }
 
     @Override
     public int getItemCount() {
-        return hospitales.size();
+        return servicio.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
