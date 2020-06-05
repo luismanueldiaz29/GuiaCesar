@@ -22,8 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+
 
 
 public class Hospitales extends AppCompatActivity {
@@ -43,6 +42,26 @@ public class Hospitales extends AppCompatActivity {
         servicioApis = new ArrayList<>();
         if((getIntent().getStringExtra("PMunicipio") != null)){
             municipio = getIntent().getStringExtra("PMunicipio");
+            if(municipio=="RIO DE ORO"){
+                municipio="RÍO DE ORO";
+            }
+            if(municipio=="CURUMANI"){
+                municipio="CURUMANÍ";
+            }
+            if(municipio=="GONZALEZ"){
+                municipio="GONZÁLEZ";
+            }
+            if(municipio=="CHIRIGUANA"){
+                municipio="CHIRIGUANÁ";
+            }
+            if(municipio=="SAN MARTIN"){
+                municipio="SAN MARTÍN";
+            }
+            if(municipio=="AGUSTIN CODAZZI"){
+                municipio="AGUSTÍN CODAZZI";
+            }
+
+
             URL=HospitalApi.getURLSpecial(municipio);
             URL2= HotelApi.getURLSpecial(municipio);
         }else{
