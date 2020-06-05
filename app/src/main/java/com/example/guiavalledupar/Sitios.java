@@ -4,8 +4,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.media.Image;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -32,7 +34,7 @@ public class Sitios extends AppCompatActivity {
     private Municipio municipio;
     private TextView historiaMunicipio;
     private TextView sitio;
-    private  TextView queencntrar;
+    private TextView queencntrar;
     private FloatingActionButton buttonRecordatorio;
     private FloatingActionButton btnConsultCalendar;
 
@@ -102,9 +104,14 @@ public class Sitios extends AppCompatActivity {
     }
 
     private void lanzarRecordatorios(){
-        Intent intent = new Intent(Intent.ACTION_EDIT);
-        intent.setType("vnd.android.cursor.item/event");
-        startActivity(intent);
+        String[] mProjection = new String[] {
+                ContactsContract.Contacts._ID,
+                ContactsContract.Contacts.DISPLAY_NAME_PRIMARY
+        };
+
+        Cursor mProfileCursor =
+                getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,
+                        mProjection, null, null, null);
     }
 
     private void lanzarSBDialog(int layoutStyle) {

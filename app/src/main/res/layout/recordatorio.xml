@@ -1,69 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="370dp"
     android:orientation="vertical"
     android:background="@color/editorColorPrimaryDark">
 
     <LinearLayout
-    android:layout_margin="@dimen/Borde"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/Borde"
+        android:layout_marginLeft="@dimen/Borde"
+        android:layout_marginTop="@dimen/Borde"
+        android:padding="@dimen/Borde"
+        android:orientation="vertical">
+
         <TextView
-            android:textColor="@color/ic_launcher_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agregar  a favoritos"
-            android:textSize="30dp"
             android:layout_gravity="center"
-            android:textStyle="bold"
-            />
+            android:text="Agregar  a favoritos"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
         <LinearLayout
-            android:layout_marginTop="@dimen/Borde"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
+            android:layout_marginTop="@dimen/Borde"
+            android:orientation="horizontal">
             <TextView
-                android:textColor="@color/ic_launcher_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Titulo : "
                 android:textStyle="bold"
+                android:textColor="@color/ic_launcher_background"
                 android:textSize="20dp"
-                android:text="Fecha"
                 />
+            <EditText
+                android:id="@+id/TituloRecordatorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/ic_launcher_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Borde"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/btnSeleccionarFecha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/Borde"
-                android:text="Seleccionar"
-                android:textColor="@color/ic_launcher_background"
                 android:background="@color/editorColorPrimary"
                 android:padding="@dimen/Borde"
-                />
+                android:text="Seleccionar"
+                android:textColor="@color/ic_launcher_background" />
+
             <TextView
-                android:textColor="@color/ic_launcher_background"
                 android:id="@+id/Fechaseleccionada"
-                android:textStyle="normal"
-                android:layout_marginLeft="@dimen/Borde"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="@dimen/Borde"
+                android:textColor="@color/ic_launcher_background"
+                android:textStyle="normal" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
             <TextView
-                android:textColor="@color/ic_launcher_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
                 android:text="Hora"
-                android:textStyle="bold"/>
+                android:textColor="@color/ic_launcher_background"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/SeleccionarHora"
@@ -76,24 +103,24 @@
                 android:textColor="@color/ic_launcher_background" />
 
             <TextView
-                android:textColor="@color/ic_launcher_background"
                 android:id="@+id/HoraSeleccionada"
-                android:textStyle="normal"
-                android:layout_marginLeft="@dimen/Borde"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginLeft="@dimen/Borde"
+                android:textColor="@color/ic_launcher_background"
+                android:textStyle="normal" />
         </LinearLayout>
+
         <Button
-            android:textColor="@color/ic_launcher_background"
             android:id="@+id/agegarRecordatorio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agregar Recordatorio"
-            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/Borde"
+            android:layout_marginRight="@dimen/Borde"
             android:background="@color/editorColorPrimary"
-            android:layout_margin="@dimen/Borde"
-            />
+            android:text="Agregar Recordatorio"
+            android:textColor="@color/ic_launcher_background"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
