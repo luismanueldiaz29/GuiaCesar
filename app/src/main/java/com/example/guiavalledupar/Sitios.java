@@ -91,7 +91,7 @@ public class Sitios extends AppCompatActivity {
         buttonRecordatorio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                lanzarSBDialog(R.layout.recordatorio);
+                lanzarSBDialog(R.layout.recordatorio, historiaMunicipio.getText().toString(), nameMunicipio.getText().toString());
             }
         });
 
@@ -114,8 +114,8 @@ public class Sitios extends AppCompatActivity {
                         mProjection, null, null, null);
     }
 
-    private void lanzarSBDialog(int layoutStyle) {
-        BottomSheetDialogFragment bottomSheetDialogFragment = new ModalBottomSheet(layoutStyle);
+    private void lanzarSBDialog(int layoutStyle, String descripcion, String nombre) {
+        BottomSheetDialogFragment bottomSheetDialogFragment = new ModalBottomSheet(layoutStyle, descripcion, nombre);
         //si esta en FALSE obliga al usuario a pulsar un boton
         //bottomSheetDialogFragment.setCancelable(false);
         bottomSheetDialogFragment.setShowsDialog(true);

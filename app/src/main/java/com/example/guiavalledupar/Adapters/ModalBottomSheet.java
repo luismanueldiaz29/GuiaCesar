@@ -36,12 +36,16 @@ public class ModalBottomSheet extends BottomSheetDialogFragment {
     private int layoutStyle;
     private TextView Fechaseleccionada;
     private TextView SeleccionarHora;
+    private String tituloRecordatorio;
     private TextView nameMunicipio;
     String date = "";
     String horas = "";
-
-    public ModalBottomSheet(int layoutStyle) {
+    String descripcion;
+    String Title;
+    public ModalBottomSheet(int layoutStyle, String descripcion, String nameMunicipio) {
         this.layoutStyle = layoutStyle;
+        this.descripcion = descripcion;
+        this.Title = nameMunicipio;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -127,14 +131,14 @@ public class ModalBottomSheet extends BottomSheetDialogFragment {
                     String titulo;
                     SeleccionarHora = VW.findViewById(R.id.HoraSeleccionada);
                     Fechaseleccionada = VW.findViewById(R.id.Fechaseleccionada);
-                    EditText Title = VW.findViewById(R.id.TituloRecordatorio);
-                    if(Title.getText().toString() == ""){
-                        titulo="Mi si tio de interes";
-                    }
-                    else{titulo = Title.getText().toString();}
+                    EditText TituloRecordatorio = VW.findViewById(R.id.TituloRecordatorio);
+                    tituloRecordatorio = TituloRecordatorio.getText().toString();
 
+                    if (TituloRecordatorio.getText().toString().isEmpty()){
+                        tituloRecordatorio = "Recordatorio de "+Title;
+                    }
                     if(SeleccionarHora.getText() != "" && Fechaseleccionada.getText() != "") {
-                        addFavorito(titulo);
+                        addFavorito();
                     }else{
                         Toast.makeText(getContext(), "debe seleccionar la fecha y la hora", Toast.LENGTH_LONG).show();
                     }
@@ -147,8 +151,7 @@ public class ModalBottomSheet extends BottomSheetDialogFragment {
         dialog.setContentView(VW);
     }
 
-    public void addFavorito(String Title){
-        String titulo = Title;
+    public void addFavorito(){
         //nameMunicipio=VW.findViewById(R.id.nameMunicipio);
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR,Ano);                 //
@@ -165,11 +168,9 @@ public class ModalBottomSheet extends BottomSheetDialogFragment {
         intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, cal.getTimeInMillis() + 60 * 60 * 1000);
 
         //intent.putExtra(CalendarContract.Events.ALL_DAY, duracion.isSelected());
-        if(Title == "") {
-            titulo = "Mi sito de interes ";
-        }
-        intent.putExtra(CalendarContract.Events.TITLE, titulo);
-        //intent.putExtra(CalendarContract.Events.DESCRIPTION, "Recordatorio de "+nameMunicipio.getText());
+
+        intent.putExtra(CalendarContract.Events.TITLE, tituloRecordatorio);
+        intent.putExtra(CalendarContract.Events.DESCRIPTION, "Recordatorio de "+this.descripcion);
         intent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Departamento del Cesar");
 
         startActivity(intent);
