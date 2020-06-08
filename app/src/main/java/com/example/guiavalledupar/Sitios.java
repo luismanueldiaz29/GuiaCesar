@@ -36,7 +36,7 @@ public class Sitios extends AppCompatActivity {
     private TextView sitio;
     private TextView queencntrar;
     private FloatingActionButton buttonRecordatorio;
-    private FloatingActionButton btnConsultCalendar;
+    private FloatingActionButton btnlocation;
 
     int[] valleduparImg = {R.drawable.valledupar, R.drawable.valledupar2, R.drawable.valledupar3, R.drawable.valledupar4};
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
@@ -60,7 +60,7 @@ public class Sitios extends AppCompatActivity {
         sitio = (TextView)findViewById(R.id.sitio);
         queencntrar = (TextView)findViewById(R.id.queencntrar);
         buttonRecordatorio = findViewById(R.id.btnCalendar);
-        btnConsultCalendar = findViewById(R.id.btnConsultCalendar);
+        btnlocation = findViewById(R.id.btnlocation);
 
         if(getIntent().getStringExtra("PMunicipio") != null){
             int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
@@ -95,12 +95,21 @@ public class Sitios extends AppCompatActivity {
             }
         });
 
-        btnConsultCalendar.setOnClickListener(new View.OnClickListener() {
+        btnlocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                lanzarRecordatorios();
+                LanzarLocalizacion();
             }
         });
+    }
+
+    private void LanzarLocalizacion(){
+        int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
+        Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+        intent.putExtra("name", municipioService.getMunicipio(pocision).Name);
+        intent.putExtra("longitud", municipioService.getMunicipio(pocision).Longitud);
+        intent.putExtra("latitud", municipioService.getMunicipio(pocision).Latitud);
+        startActivity(intent);
     }
 
     private void lanzarRecordatorios(){

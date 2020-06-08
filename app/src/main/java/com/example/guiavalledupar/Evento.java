@@ -4,12 +4,17 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.guiavalledupar.Adapters.ModalBottomSheet;
 import com.example.guiavalledupar.Entity.Municipio;
 import com.example.guiavalledupar.Services.MunicipioService;
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class Evento extends AppCompatActivity {
 
@@ -19,6 +24,7 @@ public class Evento extends AppCompatActivity {
     private TextView tvEventoDescription;
     private TextView tvNombreMunicipio;
     private ImageView ivEventoImage;
+    private FloatingActionButton btnCalendarEvento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,7 @@ public class Evento extends AppCompatActivity {
         tvdescripcionMunicipio = (TextView)findViewById(R.id.tvdescripcionMunicipio);
         tvEventoDescription = (TextView)findViewById(R.id.tvEventoDescription);
         ivEventoImage = (ImageView)findViewById(R.id.ivEventoImage);
+        btnCalendarEvento = findViewById(R.id.btnCalendarEvento);
 
         municipioService = new MunicipioService(this);
 
@@ -40,6 +47,13 @@ public class Evento extends AppCompatActivity {
             DetalleMunicipio(municipio);
             Toast.makeText(this, municipio.Name, Toast.LENGTH_LONG).show();
         }
+
+        btnCalendarEvento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarSBDialog(R.layout.recordatorio, tvEventoDescription.getText().toString(), tvNombreMunicipio.getText().toString());
+            }
+        });
     }
 
     private void DetalleMunicipio(Municipio municipio) {
@@ -47,5 +61,13 @@ public class Evento extends AppCompatActivity {
         tvdescripcionMunicipio.setText(municipio.Description);
         tvEventoDescription.setText(municipio.Evento);
         ivEventoImage.setImageResource(municipio.img);
+    }
+
+    private void lanzarSBDialog(int layoutStyle, String descripcion, String nombre) {
+        BottomSheetDialogFragment bottomSheetDialogFragment = new ModalBottomSheet(layoutStyle, descripcion, nombre);
+        //si esta en FALSE obliga al usuario a pulsar un boton
+        //bottomSheetDialogFragment.setCancelable(false);
+        bottomSheetDialogFragment.setShowsDialog(true);
+        bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
     }
 }

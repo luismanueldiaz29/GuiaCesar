@@ -109,7 +109,18 @@
             realizando siempre una caravana que se hace partiendo de las distintas veredas del Municipio de Granada, hasta llegar al parque principal que por lo general se realiza un misa y después se dispone el Padre de la Parroquia a dar bendiciones conductores y sus vehículos.
         </item>
     </string-array>
-
+    <string-array name="latitud">
+        <item>10.4650361</item>
+        <item>10.3888025</item>
+        <item>10.3910411</item>
+        <item>10.5361369</item>
+    </string-array>
+    <string-array name="longitud">
+        <item>-73.2528426</item>
+        <item>-73.1721935</item>
+        <item>-73.0270699</item>
+        <item>-73.5356905</item>
+    </string-array>
     <string-array name="municipio_sitio">
         <item>
             Sin duda alguna, el mejor plan es visitar la ciudad en épocas del Festival Vallenato, su atractivo turístico destacado. Además de esto, una actividad ideal para toda la familia es recorrer las glorietas, cuyo principal atractivo son los monumentos. En la avenida Simón Bolívar, una de las más largas de la ciudad, se pueden ver las esculturas del Cacique Upar, el Folclor Vallenato y Los Gallos.
@@ -128,4 +139,5 @@
             Desde Valledupar, tan solo debe tomarse la carretera principal donde encontrará la ruta para empezar a subir hasta los 1200 metros sobre el nivel del mar donde se encuentra Pueblo Bello.
         </item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

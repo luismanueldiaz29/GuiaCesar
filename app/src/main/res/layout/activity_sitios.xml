@@ -103,18 +103,6 @@
         app:fab_addButtonColorNormal="@color/colorAccent"
         app:fab_addButtonColorPressed="@color/colorAccent"
         app:fab_size="normal">
-        <!--<LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Agregar Recordatorio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/design_default_color_on_secondary"
-                android:textColor="@color/ic_launcher_background"
-                android:textStyle="bold"
-                />-->
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnCalendar"
@@ -125,42 +113,16 @@
                 app:fab_size="mini"
                 app:fab_title="Agregar Recordatorio"
                 />
-        <!--</LinearLayout>-->
-
-        <!--<LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:text="Agregar Recordatorio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/design_default_color_on_secondary"
-                android:textColor="@color/ic_launcher_background"
-                android:textStyle="bold"
-                />-->
             <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnConsultCalendar"
+                android:id="@+id/btnlocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:fab_addButtonColorNormal="@color/colorAccent"
-                app:fab_icon="@drawable/consult_calendar_foreground"
+                app:fab_icon="@drawable/ic_local_foreground"
                 app:fab_title="Consultar Recordatorio"
                 app:fab_size="mini"
                 />
         <!--</LinearLayout>-->
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
-    <!--<com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnCalendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="8dp"
-        app:fab_addButtonColorNormal="@color/colorAccent"
-        app:fab_addButtonColorPressed="@color/colorAccent"
-        app:fab_icon="@drawable/calendar_foreground"/>-->
 
 </RelativeLayout>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/default_circle_indicator_stroke_color"
     tools:context=".Evento">
 
@@ -84,5 +83,35 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorAccent"
+        app:fab_size="normal">
 
-</LinearLayout>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnCalendarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorNormal="@color/colorAccent"
+            app:fab_icon="@drawable/favorite_foreground"
+            app:fab_size="mini"
+            app:fab_title="Agregar Recordatorio"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnConsultCalendarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorNormal="@color/colorAccent"
+            app:fab_icon="@drawable/consult_calendar_foreground"
+            app:fab_title="Consultar Recordatorio"
+            app:fab_size="mini"
+            />
+        <!--</LinearLayout>-->
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>
