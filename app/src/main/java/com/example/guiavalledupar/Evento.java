@@ -3,6 +3,7 @@ package com.example.guiavalledupar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class Evento extends AppCompatActivity {
     private TextView tvNombreMunicipio;
     private ImageView ivEventoImage;
     private FloatingActionButton btnCalendarEvento;
+    private FloatingActionButton btnConsultLocalEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class Evento extends AppCompatActivity {
         tvEventoDescription = (TextView)findViewById(R.id.tvEventoDescription);
         ivEventoImage = (ImageView)findViewById(R.id.ivEventoImage);
         btnCalendarEvento = findViewById(R.id.btnCalendarEvento);
+        btnConsultLocalEvent = findViewById(R.id.btnConsultLocalEvent);
 
         municipioService = new MunicipioService(this);
 
@@ -54,6 +57,22 @@ public class Evento extends AppCompatActivity {
                 lanzarSBDialog(R.layout.recordatorio, tvEventoDescription.getText().toString(), tvNombreMunicipio.getText().toString());
             }
         });
+
+        btnConsultLocalEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LanzarLocalizacion();
+            }
+        });
+    }
+
+    private void LanzarLocalizacion(){
+        int pocision = Integer.parseInt(getIntent().getStringExtra("PEvento"));
+        Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+        intent.putExtra("name", municipioService.getMunicipio(pocision).Name);
+        intent.putExtra("longitud", municipioService.getMunicipio(pocision).Longitud);
+        intent.putExtra("latitud", municipioService.getMunicipio(pocision).Latitud);
+        startActivity(intent);
     }
 
     private void DetalleMunicipio(Municipio municipio) {

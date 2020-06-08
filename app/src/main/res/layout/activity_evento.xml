@@ -104,11 +104,11 @@
             app:fab_title="Agregar Recordatorio"
             />
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btnConsultCalendarEvento"
+            android:id="@+id/btnConsultLocalEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_addButtonColorNormal="@color/colorAccent"
-            app:fab_icon="@drawable/consult_calendar_foreground"
+            app:fab_icon="@drawable/ic_local_foreground"
             app:fab_title="Consultar Recordatorio"
             app:fab_size="mini"
             />
