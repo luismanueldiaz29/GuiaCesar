@@ -55,62 +55,13 @@ public class Sitios extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        municipioService = new MunicipioService(this);
-
-        nameMunicipio = (TextView)findViewById(R.id.nameMunicipio);
-        historiaMunicipio = (TextView)findViewById(R.id.historiaMunicipio);
-        sitio = (TextView)findViewById(R.id.sitio);
-        queencntrar = (TextView)findViewById(R.id.queencntrar);
-        buttonRecordatorio = findViewById(R.id.btnCalendar);
-        btnlocation = findViewById(R.id.btnlocation);
-
-        if(getIntent().getStringExtra("PMunicipio") != null){
-            int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
-            municipio = municipioService.getMunicipio(pocision);
-            nameMunicipio.setText(municipio.Name);
-            historiaMunicipio.setText(municipio.Description);
-            sitio.setText(municipio.Sitio);
-            queencntrar.setText("¿ Que puedes encontrar en "+municipio.Name+" ?");
-        }
-
-        servicio= new SitioService();
-
-        numeroImagenes=servicio.getSize();
-
-        imagenes = Imagen(Integer.parseInt(getIntent().getStringExtra("PMunicipio")));
-
-        carouselView =findViewById(R.id.carouselView);
-        carouselView.setPageCount(imagenes.length);
-        carouselView.setImageListener(imageListener);
-
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                //SitiosInteres(position);
-            }
-        });
-
-        buttonRecordatorio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                lanzarSBDialog(R.layout.recordatorio, historiaMunicipio.getText().toString(), nameMunicipio.getText().toString());
-            }
-        });
-
-        btnlocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LanzarLocalizacion();
-            }
-        });
+        init();
     }
 
     private void LanzarLocalizacion(){
-        int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
+        //getIntent().getStringExtra("PMunicipio");
         Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
-        intent.putExtra("name", municipioService.getMunicipio(pocision).Name);
-        intent.putExtra("longitud", municipioService.getMunicipio(pocision).Longitud);
-        intent.putExtra("latitud", municipioService.getMunicipio(pocision).Latitud);
+        intent.putExtra("posicion", getIntent().getStringExtra("PMunicipio"));
         startActivity(intent);
     }
 
@@ -176,5 +127,56 @@ public class Sitios extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void init(){
+
+        municipioService = new MunicipioService(this);
+
+        nameMunicipio = (TextView)findViewById(R.id.nameMunicipio);
+        historiaMunicipio = (TextView)findViewById(R.id.historiaMunicipio);
+        sitio = (TextView)findViewById(R.id.sitio);
+        queencntrar = (TextView)findViewById(R.id.queencntrar);
+        buttonRecordatorio = findViewById(R.id.btnCalendar);
+        btnlocation = findViewById(R.id.btnlocation);
+
+        if(getIntent().getStringExtra("PMunicipio") != null){
+            int pocision = Integer.parseInt(getIntent().getStringExtra("PMunicipio"));
+            municipio = municipioService.getMunicipio(pocision);
+            nameMunicipio.setText(municipio.Name);
+            historiaMunicipio.setText(municipio.Description);
+            sitio.setText(municipio.Sitio);
+            queencntrar.setText("¿ Que puedes encontrar en "+municipio.Name+" ?");
+        }
+
+        servicio= new SitioService();
+
+        numeroImagenes=servicio.getSize();
+
+        imagenes = Imagen(Integer.parseInt(getIntent().getStringExtra("PMunicipio")));
+
+        carouselView =findViewById(R.id.carouselView);
+        carouselView.setPageCount(imagenes.length);
+        carouselView.setImageListener(imageListener);
+
+        carouselView.setImageClickListener(new ImageClickListener() {
+            @Override
+            public void onClick(int position) {
+                //SitiosInteres(position);
+            }
+        });
+
+        buttonRecordatorio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarSBDialog(R.layout.recordatorio, historiaMunicipio.getText().toString(), nameMunicipio.getText().toString());
+            }
+        });
+
+        btnlocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LanzarLocalizacion();
+            }
+        });
+    }
 }
 

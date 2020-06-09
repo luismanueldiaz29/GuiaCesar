@@ -38,8 +38,8 @@ public class MunicipioRepository {
             municipio.Evento = eventos[i];
             municipio.img = img[i];
             municipio.Sitio = sitio[i];
-            municipio.Latitud = latitud[i];
-            municipio.Longitud = longitud[i];
+            municipio.Latitud = Double.parseDouble(latitud[i]);
+            municipio.Longitud = Double.parseDouble(longitud[i]);
             municipios.add(municipio);
         }
 

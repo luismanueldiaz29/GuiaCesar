@@ -6,6 +6,6 @@ public class Municipio {
     public String Description;
     public String Evento;
     public String Sitio;
-    public String Latitud;
-    public String Longitud;
+    public Double Latitud;
+    public Double Longitud;
 }

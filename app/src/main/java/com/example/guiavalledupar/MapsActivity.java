@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.guiavalledupar.Entity.Municipio;
+import com.example.guiavalledupar.Services.MunicipioService;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -16,9 +18,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity  implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private Double latitud;
-    private Double longitud;
-    private String name;
+    private MunicipioService municipioService;
+    private Municipio municipio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +32,22 @@ public class MapsActivity extends FragmentActivity  implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        name = getIntent().getStringExtra("name");
-        latitud = Double.parseDouble(getIntent().getStringExtra("latitud"));
-        longitud = Double.parseDouble(getIntent().getStringExtra("longitud"));
+        municipioService = new MunicipioService(getApplicationContext());
 
-        Toast.makeText(getApplicationContext(), "name "+name+" latitud "+latitud+" longitud "+longitud, Toast.LENGTH_LONG).show();
+        init();
+
     }
 
+    public void init(){
 
+        if(!getIntent().getStringExtra("posicion").isEmpty()) {
+            String posicion = getIntent().getStringExtra("posicion");
+            municipio = municipioService.getMunicipio(Integer.parseInt(posicion));
+            Toast.makeText(getApplicationContext(), "name "+municipio.Name+" latitud "+municipio.Latitud+" longitud "+municipio.Longitud, Toast.LENGTH_LONG).show();
+        }else{
+        Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_LONG).show();
+        }
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -53,9 +62,10 @@ public class MapsActivity extends FragmentActivity  implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng cordenada = new LatLng(latitud, longitud);
-        mMap.addMarker(new MarkerOptions().position(cordenada).title(name));
+        LatLng cordenada = new LatLng(municipio.Latitud, municipio.Longitud);
+        mMap.addMarker(new MarkerOptions().position(cordenada).title(municipio.Name));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cordenada, 13));
     }
+
 }
