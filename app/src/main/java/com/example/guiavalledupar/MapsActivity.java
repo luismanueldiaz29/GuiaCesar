@@ -56,6 +56,6 @@ public class MapsActivity extends FragmentActivity  implements OnMapReadyCallbac
         LatLng cordenada = new LatLng(latitud, longitud);
         mMap.addMarker(new MarkerOptions().position(cordenada).title(name));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cordenada, 11));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cordenada, 13));
     }
 }

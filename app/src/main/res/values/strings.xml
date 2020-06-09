@@ -62,6 +62,9 @@
         <item>La paz</item>
         <item>Manaure</item>
         <item>Pueblo Bello</item>
+        <item>Aguachica</item>
+        <item>Codazzi</item>
+        <item>SAN DIEGO</item>
     </string-array>
 
     <string-array name="Descripcion_municipios">
@@ -79,9 +82,19 @@
             \n\nMas información en: https://es.wikipedia.org/wiki/Manaure_Balc%C3%B3n_del_Cesar
         </item>
         <item>
-
             <b>Pueblo Bello</b> es uno de los 25 municipios colombianos que integran el Departamento del Cesar. Se encuentra sobre la Sierra Nevada de Santa Marta a una altitud de 1200 m.s.n.m. en un estrecho valle de montaña sobre un altiplano. Es un importante centro para servicios de salud y abasto para la población Indígena de la Sierra y un atractivo sitio turístico no solo para los habitantes del Cesar sino también de otras regiones de Colombia por tener en su jurisdicción la capital de la Cultura Arhuaca Nabusímake con todas las características de la cultura indígena en pleno esplendor.\n\n
             mas información en: https://es.wikipedia.org/wiki/Pueblo_Bello
+        </item>
+        <item>
+            Aguachica es una ciudad colombiana ubicada al nororiente del país, en el departamento del Cesar. Por economía y población es la segunda ciudad del departamento y uno de los centros urbanos más importantes de la región.\n
+            La ciudad se encuentra en una posición geográfica estratégica, siendo un punto de conexión entre el norte y el interior oriental del país a través de la Troncal del Magdalena (Ruta Nacional 45) y la Troncal Central (Ruta Nacional 45A), contando además con transporte aéreo, férreo y en forma paralela con la vía fluvial del río Magdalena.\n
+        </item>
+        <item>
+            Agustín Codazo o simplemente Codazo, conocida como la capital agroenergética de Colombia, es un municipio localizado al norte del departamento del Cesar, limita al norte con La Paz, al oeste con El Paso, al sur con Becerril y al este con Venezuela.​\n
+            Es la tercera Ciudad en población e importancia del departamento del Cesar, Es un importante centro en producción agroindustrial, Agrícola y ganadera en el departamento, Además es el 8° Productor de carbón de Colombia. Posee una situación geográfica estratégica que favorece su integración con los mercados regionales y los principales centros exportadores del país.
+        </item>
+        <item>
+            Villa de San Diego es un municipio de Colombia, situado en el nordeste del país en el departamento de Cesar. La cabecera del municipio está situada a 20 km3​ de la capital departamental, Valledupar, y hace parte del área metropolitana de la ciudad. El área municipal es de 614 km² y limita por el norte con Valledupar y La Paz, por el este y el sur con La Paz y por el oeste con Valledupar. Forman parte del municipio los corregimientos de: Media Luna, Tocaimo, El Rincón, Los Tupes, Las Pitillas, Los Brasiles y Nuevas Flores. Es cabecera de círculo notarial con una notaría, perteneciente al círculo principal de registro y al distrito judicial de Valledupar; el Municipio de San Diego corresponde a la circunscripción electoral del Cesar. Al 1º de enero de 1995 tenía registrados 2.643 predios urbanos y 555 rurales.
         </item>
     </string-array>
 
@@ -92,7 +105,7 @@
             Durante la Semana Santa, 65 puestos de dulces instalados en la recién renovada Plaza Alfonso López atendieron a miles de visitantes entre locales y turistas
         </item>
         <item>
-            La paz\n\n
+            LA PAZ\n\n
             Festival Cultural La Paz en el Mundo\n
             Los orígenes se remontan a la necesidad de algunos jóvenes por impulsar el acercamiento de nuevas formas de expresión artísticas y culturales en el municipio de Los Reyes La Paz.
         </item>
@@ -108,19 +121,56 @@
             Cada 16 de julio los católicos le rinden tributo a Nuestra Señora del Carmen, patrona de los conductores, de los Bomberos y la reina de las Fuerzas Armadas de Colombia.\n
             realizando siempre una caravana que se hace partiendo de las distintas veredas del Municipio de Granada, hasta llegar al parque principal que por lo general se realiza un misa y después se dispone el Padre de la Parroquia a dar bendiciones conductores y sus vehículos.
         </item>
+        <item>
+            AGUACHICA\n\n
+            En Aguachica podemos realizar diferentes actividades acuáticas y ecoturismo gracias a su ubicación geográfica, queda entre la Cordillera Oriental y el Valle del río Magdalena.\n\n
+
+            BOSQUE EL AGÜIL\n
+
+            En el sector urbano sobresale el bosque el Agüil; como zona verde de gran biodiversidad que se encuentra en la parte norte de la periferia de la zona urbana; posee más de 70 especies de árboles nativos de la Región.\n\n
+            Festividades: Fiestas patronales celebradas en agosto
+        </item>
+        <item>
+            CODAZZI\n\n
+            Llamada “CIUDAD BLANCA DE COLOMBIA” por ser una región líder en la producción de algodón. El municipio de Agustín Codazzi se encuentra ubicado en la parte norte del Departamento del Cesar a 45 minutos del la capital del departamento, Valledupar, hace parte de la Serranía de Perijá.\n\n
+
+            Algunos de sus eventos mas importantes son:\n\n
+
+            Festividades (Tarima Alfonso Ávila Quintero)\n
+            El municipio de Agustín Codazzi tiene como principal evento cultural y turístico el Festival de Música Vallenata en Guitarra. Fundado desde 1987, en los aires de música tradicional en tríos, paseo y merengue.\n\n
+
+            EL FESTIVAL VALLENATO EN GUITARRAS EN AGUSTÍN CODAZZI
+            Es catalogado por el ministerio de cultura como uno de los 17 festivales de música tradicional más importante del país; el primero en su género a nivel nacional.\n\n
+
+            Es importante destacar que el certamen goza de una gran aceptación por parte del guitarristas y compositores del ámbito nacional.\n
+
+            Año tras año ha venido aumentando el número de participantes; lo que ha permitido el interés de los medios de comunicación, televisivos, radiales y escritos para realizar el cubrimiento y difusión de nuestro magno evento, el cual se realiza todos los años a mediados del agosto-
+        </item>
+        <item>
+           El municipio de San Diego ofrece a sus visitantes diversos eventos que fomentan la cultura, el folclor y la religiosidad de sus habitantes, entre ellos se celebran el Festival de Acordeones, Versos y Canciones celebrado en junio, el festival de Voces, Versos y Canciones del barrio La Victoria en diciembre, las fiestas de la Virgen del Perpetuo Socorro que se celebra el segundo domingo de junio, las de la Virgen del Carmen el 16 de julio la de San Rafael que se celebra el 24 de Octubre en el corregimiento de los Tupes, el festival del Aguacate en el corregimiento de Media Luna, el cumpleaños de nuestro Señor Jesucristo y la Hermosísima Semana Santa.\n\n
+            mas informacion en: http://www.colombiaturismoweb.com/DEPARTAMENTOS/CESAR/MUNICIPIOS/SAN%20DIEGO/SAN%20DIEGO.htm
+        </item>
     </string-array>
+
     <string-array name="latitud">
-        <item>10.4650361</item>
-        <item>10.3888025</item>
-        <item>10.3910411</item>
-        <item>10.5361369</item>
+        <item>10.4650361</item><!--valledupar-->
+        <item>10.3888025</item><!--La paz-->
+        <item>10.3910411</item><!--MANAURE-->
+        <item>10.409489</item><!--PUEBLO BELLO-->
+        <item>8.309492394642376</item><!--AGUACHICA-->
+        <item>10.038834</item><!--CODAZZI-->
+        <item>10.333932</item><!--San diego-->
     </string-array>
     <string-array name="longitud">
-        <item>-73.2528426</item>
-        <item>-73.1721935</item>
-        <item>-73.0270699</item>
-        <item>-73.5356905</item>
+        <item>-73.2528426</item><!--valledupar-->
+        <item>-73.1721935</item><!--La paz-->
+        <item>-73.0270699</item><!--MANAURE-->
+        <item>-73.591486</item><!--PUEBLO BELLO-->
+        <item>-73.61684205886704</item><!--AGUACHICA-->
+        <item>-73.235670</item><!--CODAZZI-->
+        <item>-73.181319</item><!--San diego-->
     </string-array>
+
     <string-array name="municipio_sitio">
         <item>
             Sin duda alguna, el mejor plan es visitar la ciudad en épocas del Festival Vallenato, su atractivo turístico destacado. Además de esto, una actividad ideal para toda la familia es recorrer las glorietas, cuyo principal atractivo son los monumentos. En la avenida Simón Bolívar, una de las más largas de la ciudad, se pueden ver las esculturas del Cacique Upar, el Folclor Vallenato y Los Gallos.
@@ -137,6 +187,18 @@
             Con una temperatura templada entre 16 y 22ºC Pueblo Bello es el lugar ideal no solo para desconectarse y descansar, sino para conocer una parte de la historia del departamento en el que reina el vallenato.\n
 
             Desde Valledupar, tan solo debe tomarse la carretera principal donde encontrará la ruta para empezar a subir hasta los 1200 metros sobre el nivel del mar donde se encuentra Pueblo Bello.
+        </item>
+        <item>
+            El territorio de Aguachica tiene una zona montañosa al Norte, representada por las estibaciones Noroccidentales de la Cordillera Oriental con elevaciones entre los 200 y los 2.150 metros sobre el nivel del mar; al sur una zona de planicie o llanura regada por los ríos Lebrija y Magdalena y sus numerosa quebradas y arroyos, cuya fisiografía oscila entre los 50 y los 200 msnm.\n\n
+
+            Mas informacion en: https://encolombia.com/turismo/destinos-turisticos/destinos-colombianos/cesar/aguachica/
+        </item>
+        <item>
+            Es la tercera Ciudad en población e importancia del departamento y capital agroindustrial de Colombia. Su nombre se debe al militar y geógrafo italiano Agustín Codazzi. Aquí se celebra el festival vallenato en guitarras y su hermosa iglesia y plaza principal son un encanto para propios y visitantes. Muchos son los lugares para descubrir y balnearios en donde pasar un momento en familia.
+            mas infacion en: http://cartillaturistica.eventossinndetec.com/#/cartilla/nuestrossitios/es/49
+        </item>
+        <item>
+            Como lo dice el clásico de la música Vallenata Mis Condiciones que canta Iván Villazón: “Quiero llevarte a conocer un bello pueblo del Cesar, para San Diego vas a ir y nunca lo vas a olvidar.” La iglesia colonial, su hermosa plaza, la fuente y su zona rural, de la cual el corregimiento de Los Encantos es la más visitada por sus hermosas cascadas, son una joya por descubrir.
         </item>
     </string-array>
     <string name="title_activity_maps">Map</string>

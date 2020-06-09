@@ -42,7 +42,9 @@ public class Sitios extends AppCompatActivity {
     int[] LapazImg = {R.drawable.lapazcesar, R.drawable.lapaz, R.drawable.lapaz3, R.drawable.lapaz4};
     int[] ManuereImg = {R.drawable.manaure, R.drawable.manaure2, R.drawable.manaure3, R.drawable.manaure4, R.drawable.manaure5};
     int[] PuebloBelloImg = {R.drawable.pueblobellocesar, R.drawable.pueblobello, R.drawable.pueblobello3, R.drawable.pueblobello4};
-
+    int[] AguachicaImg = {R.drawable.aguachica1, R.drawable.aguachica2, R.drawable.aguachica3, R.drawable.aguachica4};
+    int[] CodazziImg = {R.drawable.codazzi1, R.drawable.codazzi2, R.drawable.codazzi3, R.drawable.codazzi4};
+    int[] SandiegoImg = {R.drawable.sandiego1, R.drawable.sandiego2, R.drawable.sandiego3, R.drawable.sandiego4};
     private int[] imagenes;
 
     @Override
@@ -149,6 +151,12 @@ public class Sitios extends AppCompatActivity {
             return ManuereImg;
         }else if (pocision == 3){
             return PuebloBelloImg;
+        }else if(pocision == 4){
+            return AguachicaImg;
+        }else if(pocision==5){
+            return CodazziImg;
+        }else if(pocision==6){
+            return SandiegoImg;
         }
         return null;
     }
@@ -169,3 +177,4 @@ public class Sitios extends AppCompatActivity {
     }
 
 }
+
