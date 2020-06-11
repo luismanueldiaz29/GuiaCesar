@@ -18,17 +18,6 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/cardview_default_elevation">
 
-            <!--<TextView
-                android:id="@+id/infocarrusel"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:text="asasas"
-                android:textColor="@color/cardview_dark_background"
-                android:textLocale="@string/text_info"
-                android:textStyle="bold" />-->
-
-
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
@@ -73,7 +62,6 @@
                         android:src="@drawable/sitiosdeinteres"></ImageView>
                 </LinearLayout>
 
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_imagen"
@@ -96,9 +84,7 @@
                     android:layout_marginBottom="@dimen/Borde"
                     android:onClick="Parques"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/parques"></ImageView>
-
-
+                    android:src="@drawable/actividades"></ImageView>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -112,6 +98,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>

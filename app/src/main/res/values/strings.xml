@@ -4,58 +4,6 @@
     <string name="descripcion">Descripción :</string>
     <string name="string_municipio_eventos">Eventos que se realizan en los diferentes municipios del cesar</string>
 
-    <!-- here is the data of the dishes -->
-    <string-array name="name_plato">
-        <item>CHIVO ASADO</item>
-        <item>CARNE DE RES ASADA</item>
-        <item>ARROZ DE COCO</item>
-        <item>SANCOCHO TRIFASICO</item>
-        <item>VIUDA DE PESCADO</item>
-    </string-array>
-
-    <string-array name="description_plato">
-        <item>
-            El chivo asado es una plato tipico de la region del Cesar, en gran parte de los municipios se prepara mas que todo para matrimonios y festividades...
-        </item>
-        <item>
-            La carne Asada es un plato que se prepara  mas que todo para reuniones con familiares y amigos, celebrar festividades o fechas especiales...
-        </item>
-        <item>
-            El Arroz con coco es una de las especialidades de la cosina Cesarence por lo general cuando se prepara se usa como acompañante de otra comida...
-        </item>
-        <item>
-            El saconcho trifasico o sancocho de tres carnes es un popular plato no solo en e Cesar prodia desirce que en toda Colombia...
-        </item>
-        <item>
-            La viuda de pescado es una comida tipica de Cesar, un bocachico acompañado de yuca harinosa, patano amarillo y verde, suero y con lo que mas se antoje...
-        </item>
-    </string-array>
-
-
-    <string-array name="preparation_plato">
-        <item>
-            Prepare una salmuera con el jugo de limón, el vinagre, el aceite, los ajos, las cebollas, las yerbas y los aliños. Revuelva bien y ponga las presas del chivo a adobar por unas horas. Asiste las brasas al vivo y coloque las presas sobre una parrilla. Aselas por ambos lados hasta que estén doradas, rociandoles la salsa por encima. Acompáñelo con yuca frita y arroz blanco.
-        </item>
-        <item>
-            1 - Se limpia la carne. Se le quita la grasa y los nervios desagradables.\n
-            2 - Se le añade la sal, al gusto.\n
-            3 - Calentar el aceite. Cuando esté muy caliente se añadirá la carne, para dorarla.\n
-            4 - Añadirle los dientes de ajos, las zanahorias y las cebollas\n
-            5 - Todo al horno 180 200 grados unos 20 minutos. Vigilad que no se queme.\n
-            6 - A mitad de la preparación, añadir el vaso de vino. Y seguid asando.\n
-            7 - Sacad la carne del horno y servir con su salsa aparte. No te quemes!!\n
-        </item>
-        <item>
-            Partir el coco en trozos pequeños y licuarlo en su propia agua. colar y dejar el bagazo aparte. Licuar nuevamente el bagazo de coco con el agua tibia. Aparte, en una olla poner a calentar a fuego medio, la primera leche del coco con el azúcar y dejar cocer gasta que se ponga dorado. Incorporar la segunda agua de coco, la gaseosa la sal, y las pasas. dejar hervir. Añadir el arroz y mezclar dejar secar y agregar mantequilla, tapar la olla y continuar la cocion a fuego bajo hasta que el grano seque completamente. Acompañarlo con tajadas de plátano.
-        </item>
-        <item>
-            Sazone las carnes y cocínelas sin dejar que se ablanden totalmente. Agregue el agua. Cuando hierva, añada las viandas. Deje hervir por unos minutos, y luego añada el jugo de naranja agria y el resto de los ingredientes. Cuando esté todo cocido y con el espesor deseado, rectifique la sal.
-            Sirve para 6 personas
-        </item>
-        <item>
-            Pon a hervir el agua en una olla con la cebolla, el ajo, el cilantro, la sal, la pimienta y el comino. Agrega los plátanos y con intervalos de 10 minutos añade la papa, la yuca, la arracacha y la ahuyama. Agrega los pescados y cocina a fuego medio 20 minutos con la olla tapada. Saca los pescados y el resto de los ingredientes y sírvelos bañados con el resto de los ingredientes. Cuela el caldo y sírvelo aparte con mucho cilantro.
-        </item>
-    </string-array>
 
     <string-array name="name_municipios">
         <item>Valledupar</item>
@@ -65,6 +13,7 @@
         <item>Aguachica</item>
         <item>Codazzi</item>
         <item>SAN DIEGO</item>
+        <!--<item>Astrea</item>-->
     </string-array>
 
     <string-array name="Descripcion_municipios">
@@ -95,6 +44,9 @@
         </item>
         <item>
             Villa de San Diego es un municipio de Colombia, situado en el nordeste del país en el departamento de Cesar. La cabecera del municipio está situada a 20 km3​ de la capital departamental, Valledupar, y hace parte del área metropolitana de la ciudad. El área municipal es de 614 km² y limita por el norte con Valledupar y La Paz, por el este y el sur con La Paz y por el oeste con Valledupar. Forman parte del municipio los corregimientos de: Media Luna, Tocaimo, El Rincón, Los Tupes, Las Pitillas, Los Brasiles y Nuevas Flores. Es cabecera de círculo notarial con una notaría, perteneciente al círculo principal de registro y al distrito judicial de Valledupar; el Municipio de San Diego corresponde a la circunscripción electoral del Cesar. Al 1º de enero de 1995 tenía registrados 2.643 predios urbanos y 555 rurales.
+        </item>
+        <item>
+            Astrea es un municipio colombiano, situado en el noreste del país, en el departamento de Cesar. Limita al norte y al oeste con el municipio de Pijiño del Carmen (ubicado en el departamento de Magdalena). Por el norte, también limita con El Paso. Por el sur con el departamento de Magdalena (municipios de San Sebastián de Buenavista y Guamal) y al este con Chimichagua.
         </item>
     </string-array>
 
@@ -200,6 +152,93 @@
         <item>
             Como lo dice el clásico de la música Vallenata Mis Condiciones que canta Iván Villazón: “Quiero llevarte a conocer un bello pueblo del Cesar, para San Diego vas a ir y nunca lo vas a olvidar.” La iglesia colonial, su hermosa plaza, la fuente y su zona rural, de la cual el corregimiento de Los Encantos es la más visitada por sus hermosas cascadas, son una joya por descubrir.
         </item>
+        <!--<item>
+            La región de la montaña como llamaban los habitantes de San Sebastián, San Zenón, Pijiño, Pinto y Guamal al territorio comprendido entre los pueblos de Guamal, San Sebastián, El Difícil, El Paso y Chimichagua, caracterizado por la flora y fauna natural exótica, fue una de las razones para que personas oriundas de Plato, El Carmen de Bolivar, exploraron este territorio en las primeras
+            décadas del siglo XX, en busca de mejores condiciones de vida mediante la explotación del Látex del árbol de Bálsamo de Tolua (Miroxilon, balsamum-Miroxilon tuluífera.) realizando pequeños campamentos que con el pasar del tiempo se convirtieron en fincas de cuatro, cinco hectáreas y más delimitadas por trochas realizadas a machetes y hachas cultivadas de pastos naturales y cultivos de Pan coger
+        </item>-->
     </string-array>
     <string name="title_activity_maps">Map</string>
+
+
+    <!--Array de platos tipicos...........................................................................................-->
+
+
+    <!-- here is the data of the dishes -->
+    <string-array name="name_plato">
+        <item>CHIVO ASADO</item>
+        <item>CARNE DE RES ASADA</item>
+        <item>ARROZ DE COCO</item>
+        <item>SANCOCHO TRIFASICO</item>
+        <item>VIUDA DE PESCADO</item>
+    </string-array>
+
+    <string-array name="description_plato">
+        <item>
+            El chivo asado es una plato tipico de la region del Cesar, en gran parte de los municipios se prepara mas que todo para matrimonios y festividades...
+        </item>
+        <item>
+            La carne Asada es un plato que se prepara  mas que todo para reuniones con familiares y amigos, celebrar festividades o fechas especiales...
+        </item>
+        <item>
+            El Arroz con coco es una de las especialidades de la cosina Cesarence por lo general cuando se prepara se usa como acompañante de otra comida...
+        </item>
+        <item>
+            El saconcho trifasico o sancocho de tres carnes es un popular plato no solo en e Cesar prodia desirce que en toda Colombia...
+        </item>
+        <item>
+            La viuda de pescado es una comida tipica de Cesar, un bocachico acompañado de yuca harinosa, patano amarillo y verde, suero y con lo que mas se antoje...
+        </item>
+    </string-array>
+
+
+    <string-array name="preparation_plato">
+        <item>
+            Prepare una salmuera con el jugo de limón, el vinagre, el aceite, los ajos, las cebollas, las yerbas y los aliños. Revuelva bien y ponga las presas del chivo a adobar por unas horas. Asiste las brasas al vivo y coloque las presas sobre una parrilla. Aselas por ambos lados hasta que estén doradas, rociandoles la salsa por encima. Acompáñelo con yuca frita y arroz blanco.
+        </item>
+        <item>
+            1 - Se limpia la carne. Se le quita la grasa y los nervios desagradables.\n
+            2 - Se le añade la sal, al gusto.\n
+            3 - Calentar el aceite. Cuando esté muy caliente se añadirá la carne, para dorarla.\n
+            4 - Añadirle los dientes de ajos, las zanahorias y las cebollas\n
+            5 - Todo al horno 180 200 grados unos 20 minutos. Vigilad que no se queme.\n
+            6 - A mitad de la preparación, añadir el vaso de vino. Y seguid asando.\n
+            7 - Sacad la carne del horno y servir con su salsa aparte. No te quemes!!\n
+        </item>
+        <item>
+            Partir el coco en trozos pequeños y licuarlo en su propia agua. colar y dejar el bagazo aparte. Licuar nuevamente el bagazo de coco con el agua tibia. Aparte, en una olla poner a calentar a fuego medio, la primera leche del coco con el azúcar y dejar cocer gasta que se ponga dorado. Incorporar la segunda agua de coco, la gaseosa la sal, y las pasas. dejar hervir. Añadir el arroz y mezclar dejar secar y agregar mantequilla, tapar la olla y continuar la cocion a fuego bajo hasta que el grano seque completamente. Acompañarlo con tajadas de plátano.
+        </item>
+        <item>
+            Sazone las carnes y cocínelas sin dejar que se ablanden totalmente. Agregue el agua. Cuando hierva, añada las viandas. Deje hervir por unos minutos, y luego añada el jugo de naranja agria y el resto de los ingredientes. Cuando esté todo cocido y con el espesor deseado, rectifique la sal.
+            Sirve para 6 personas
+        </item>
+        <item>
+            Pon a hervir el agua en una olla con la cebolla, el ajo, el cilantro, la sal, la pimienta y el comino. Agrega los plátanos y con intervalos de 10 minutos añade la papa, la yuca, la arracacha y la ahuyama. Agrega los pescados y cocina a fuego medio 20 minutos con la olla tapada. Saca los pescados y el resto de los ingredientes y sírvelos bañados con el resto de los ingredientes. Cuela el caldo y sírvelo aparte con mucho cilantro.
+        </item>
+    </string-array>
+
+    <string-array name="restaurante_name_chivo_Asado">
+        <item>Santa Brasa</item>
+        <item>Restaurante Tipicos Eloy</item>
+    </string-array>
+
+    <string-array name="restaurante_horario_chivo_asado">
+        <item>De lunes a viernes: 11:45 a 22:00</item><!--Santa Brasa-->
+        <item>De lunes a viernes: 06:00 a 14:00</item><!--Restaurante Tipicos Eloy-->
+    </string-array>
+
+    <string-array name="restaurante_latitud_chivo_Asado">
+        <item>10.481433</item><!--Santa Brasa-->
+        <item>10.4808807</item><!--Restaurante Tipicos Eloy-->
+    </string-array>
+
+    <string-array name="restaurante_longitud_chivo_Asado">
+        <item>-73.254209</item><!--Santa Brasa-->
+        <item>-73.254388</item><!--Restaurante Tipicos Eloy-->
+    </string-array>
+
+    <string-array name="restaurante_chivo_asado_direccion">
+        <item>Valledupar, Cesar</item><!--Santa Brasa-->
+        <item>Cra. 12 #8-50, Valledupar, Cesar</item><!--Restaurante Tipicos Eloy-->
+    </string-array>
+
 </resources>

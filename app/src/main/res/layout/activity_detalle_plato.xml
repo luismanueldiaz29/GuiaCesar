@@ -26,22 +26,23 @@
                 android:id="@+id/tvNamePlato"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_info"
                 android:layout_margin="@dimen/Borde"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="25dp"/>
+                android:textSize="30dp"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
+                android:gravity="center"
                 android:text="@string/descripcion"
                 android:layout_margin="@dimen/Borde"/>
             <TextView
                 android:id="@+id/tvPlatoDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/text_info"
                 android:layout_margin="@dimen/Borde"
                 android:textSize="@dimen/parrafoPlato"/>
@@ -49,8 +50,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:text="Preparacion"
+                android:gravity="center"
                 android:textStyle="bold"
                 android:layout_margin="@dimen/Borde"
                 />
@@ -60,7 +62,27 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/Borde"
                 android:textSize="@dimen/parrafoPlato"
-                android:text="@string/text_info"/>
+                android:text="@string/text_info"
+                android:layout_marginBottom="@dimen/Borde"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Restaurantes"
+                android:layout_marginBottom="@dimen/Borde"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerRestaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Borde"
+                android:layout_marginLeft="@dimen/Borde"
+                android:layout_marginBottom="@dimen/Borde"
+                />
         </LinearLayout>
     </ScrollView>
 
