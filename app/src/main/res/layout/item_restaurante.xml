@@ -116,17 +116,28 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />-->
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/Ubicacion"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_local_foreground"/>
+                            android:src="@drawable/ic_local_foreground"
+                            android:layout_marginRight="@dimen/Borde"/>
+
+                        <ImageView
+                            android:id="@+id/llamar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_llamada_foreground"/>
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

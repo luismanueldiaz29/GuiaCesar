@@ -1,5 +1,7 @@
 package com.example.guiavalledupar.Adapters;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +25,7 @@ import static java.security.AccessController.getContext;
 public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterExpandableRestaurante.ExpaPlatoViewHolder>{
 
     ArrayList<Restaurante> restaurantes;
-    ImageView Ubicacion;
+    ImageView Ubicacion, llamar;
 
     public AdapterExpandableRestaurante(ArrayList<Restaurante> restaurantes){
         this.restaurantes = restaurantes;
@@ -67,6 +69,7 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
             expandableLayout = itemView.findViewById(R.id.expandableLayout);
 
             Ubicacion = itemView.findViewById(R.id.Ubicacion);
+            llamar = itemView.findViewById(R.id.llamar);
 
             titleTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -88,6 +91,30 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
                     itemView.getContext().startActivity(intent);
                 }
             });
+
+            llamar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(itemView.getContext());
+                    alertDialog.setMessage(restaurantes.get(getAdapterPosition()).Telefono)
+                        .setTitle("¿Quiere realizar la llamada?")
+                            .setCancelable(true)
+                                .setPositiveButton("Llamar", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel();
+                                    }
+                                })
+                                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel();
+                                    }
+                                });
+                    AlertDialog alertDialog1 = alertDialog.create();
+                    alertDialog.show();
+                }
+            });
         }
     }
     /*        private ImageView Ubicacion;
@@ -98,4 +125,5 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
                 Toast.makeText(getApplicationContext(), "my location", Toast.LENGTH_LONG).show();
             }
         });*/
+
 }
