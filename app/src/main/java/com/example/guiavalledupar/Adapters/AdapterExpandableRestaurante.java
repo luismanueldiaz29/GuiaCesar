@@ -1,8 +1,11 @@
 package com.example.guiavalledupar.Adapters;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -102,7 +105,14 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
                                 .setPositiveButton("Llamar", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        dialog.cancel();
+                                        Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+restaurantes.get(getAdapterPosition()).Telefono));
+
+                                        int result = itemView.getContext().checkCallingOrSelfPermission(Manifest.permission.CALL_PHONE);
+                                        if ( result == PackageManager.PERMISSION_GRANTED){
+                                            itemView.getContext().startActivity(intentCall);}
+                                        else{
+                                            Toast.makeText(itemView.getContext(), "Acceso no autorizado", Toast.LENGTH_LONG).show();
+                                         }
                                     }
                                 })
                                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
@@ -125,5 +135,6 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
                 Toast.makeText(getApplicationContext(), "my location", Toast.LENGTH_LONG).show();
             }
         });*/
+
 
 }

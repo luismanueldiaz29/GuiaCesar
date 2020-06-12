@@ -7,6 +7,10 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
+    <!--Permiso para realizar llamada-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.telephony” android:required=”false"/>
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- permisos de intenet -->
