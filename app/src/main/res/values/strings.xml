@@ -216,29 +216,238 @@
         </item>
     </string-array>
 
+    <!--Resaturante Chivo asado................................................................................-->
     <string-array name="restaurante_name_chivo_Asado">
         <item>Santa Brasa</item>
         <item>Restaurante Tipicos Eloy</item>
+        <item>Restaurante La Brasa</item>
     </string-array>
 
     <string-array name="restaurante_horario_chivo_asado">
         <item>De lunes a viernes: 11:45 a 22:00</item><!--Santa Brasa-->
         <item>De lunes a viernes: 06:00 a 14:00</item><!--Restaurante Tipicos Eloy-->
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--Restaurante La Brasa-->
     </string-array>
 
     <string-array name="restaurante_latitud_chivo_Asado">
         <item>10.481433</item><!--Santa Brasa-->
         <item>10.4808807</item><!--Restaurante Tipicos Eloy-->
+        <item>8.313398</item><!--Restaurante La Brasa-->
     </string-array>
 
     <string-array name="restaurante_longitud_chivo_Asado">
         <item>-73.254209</item><!--Santa Brasa-->
         <item>-73.254388</item><!--Restaurante Tipicos Eloy-->
+        <item>-73.596945</item><!--Restaurante La Brasa-->
     </string-array>
 
     <string-array name="restaurante_chivo_asado_direccion">
         <item>Valledupar, Cesar</item><!--Santa Brasa-->
         <item>Cra. 12 #8-50, Valledupar, Cesar</item><!--Restaurante Tipicos Eloy-->
+        <item>#4-41 a, Cra. 40 #4103, Aguachica, Cesar</item><!--Restaurante La Brasa-->
     </string-array>
 
+    <string-array name="restaurane_chivo_asado_telefono">
+        <item>+573135325938</item><!--Santa Brasa-->
+        <item>+573152245876</item><!--Restaurante Tipicos Eloy-->
+        <item>+573135325938</item><!--Restaurante La Brasa-->
+    </string-array>
+
+    <!--Restaurantes Carne de res Asada.....................................................................-->
+
+    <string-array name="restaurante_name_carne_res_asada">
+        <item>Santa Brasa</item>
+        <item>Restaurante Tipicos Eloy</item>
+        <item>Restaurante La Brasa</item>
+        <item>Restaurante Rincón Paisa</item>
+        <item>RESTAURANTE EL ESTABLO</item>
+    </string-array>
+
+    <string-array name="restaurante_horario_carne_res_asado">
+        <item>De lunes a viernes: 11:45 a 22:00</item><!--Santa Brasa-->
+        <item>De lunes a viernes: 06:00 a 14:00</item><!--Restaurante Tipicos Eloy-->
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--Restaurante La Brasa-->
+        <item>De lunes a viernes: 11:45 a 22:00</item><!--Restaurante Rincón Paisa-->
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--RESTAURANTE EL ESTABLO-->
+    </string-array>
+
+    <string-array name="restaurante_latitud_carne_res_asado">
+        <item>10.481433</item><!--Santa Brasa-->
+        <item>10.4808807</item><!--Restaurante Tipicos Eloy-->
+        <item>8.313398</item><!--Restaurante La Brasa-->
+        <item>8.313013</item><!--Restaurante Rincón Paisa-->
+        <item>8.307708</item><!--RESTAURANTE EL ESTABLO-->
+    </string-array>
+
+    <string-array name="restaurante_longitud_carne_res_asado">
+        <item>-73.254209</item><!--Santa Brasa-->
+        <item>-73.254388</item><!--Restaurante Tipicos Eloy-->
+        <item>-73.596945</item><!--Restaurante La Brasa-->
+        <item>-73.603242</item><!--Restaurante Rincón Paisa-->
+        <item>-73.598103</item><!--RESTAURANTE EL ESTABLO-->
+    </string-array>
+
+    <string-array name="restaurante_chivo_carne_res_asado">
+        <item>Valledupar, Cesar</item><!--Santa Brasa-->
+        <item>Cra. 12 #8-50, Valledupar, Cesar</item><!--Restaurante Tipicos Eloy-->
+        <item>#4-41 a, Cra. 40 #4103, Aguachica, Cesar</item><!--Restaurante La Brasa-->
+        <item>Cra. 32 #5-45, Aguachica, Cesar</item><!--Restaurante Rincón Paisa-->
+        <item>Cra. 40 ##8a-28, Aguachica, Cesar</item><!--RESTAURANTE EL ESTABLO-->
+    </string-array>
+
+    <string-array name="restaurane_carne_res_asado_telefono">
+        <item>+573135325938</item><!--Santa Brasa-->
+        <item>+573152245876</item><!--Restaurante Tipicos Eloy-->
+        <item>+573135325938</item><!--Restaurante La Brasa-->
+        <item>+573158555213</item><!--Restaurante Rincón Paisa-->
+        <item>+573152428857</item><!--RESTAURANTE EL ESTABLO-->
+    </string-array>
+
+    <!--Restaurantes sancocho.............................................................................-->
+    <string-array name="restaurante_name_sancocho">
+        <item>Restaurante Rincón Paisa</item>
+        <item>RESTAURANTE EL ESTABLO</item>
+        <item>Restaurante La Brasa</item>
+        <item>Sancocho Junior</item>
+        <item>Donde Siempre</item>
+        <item>La Paz EN LA VIA</item>
+    </string-array>
+
+    <string-array name="restaurante_horario_sancocho">
+        <item>De lunes a viernes: 11:45 a 22:00</item><!--Restaurante Rincón Paisa-->
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--RESTAURANTE EL ESTABLO-->
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--Restaurante La Brasa-->ç
+        <item>De lunes a domingo 10:30a16:00</item><!--Sancocho Junior-->
+        <item>De lunes a domingo, 18:00a23:00</item><!--Donde Siempre-->
+        <item>De lunes a sabado, 11:45 a 22:00</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_latitud_sancocho">
+        <item>8.313013</item><!--Restaurante Rincón Paisa-->
+        <item>8.307708</item><!--RESTAURANTE EL ESTABLO-->
+        <item>8.313398</item><!--Restaurante La Brasa-->
+        <item>10.483433</item><!--Sancocho Junior-->
+        <item>10.485722</item><!--Donde Siempre-->
+        <item>10.387539</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_longitud_sancocho">
+        <item>-73.603242</item><!--Restaurante Rincón Paisa-->
+        <item>-73.598103</item><!--RESTAURANTE EL ESTABLO-->
+        <item>-73.596945</item><!--Restaurante La Brasa-->ç
+        <item>-73.262143</item><!--Sancocho Junior-->
+        <item>-73.260212</item><!--Donde Siempre-->
+        <item>-73.171679</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_sancocho_direccion">
+        <item>Cra. 32 #5-45, Aguachica, Cesar</item><!--Restaurante Rincón Paisa-->
+        <item>Cra. 40 ##8a-28, Aguachica, Cesar</item><!--RESTAURANTE EL ESTABLO-->
+        <item>#4-41 a, Cra. 40 #4103, Aguachica, Cesar</item><!--Restaurante La Brasa-->
+        <item>Calle 7 No. 19-24, Valledupar, Cesar</item><!--Sancocho Junior-->
+        <item>Carrera 13A #6C-02, Barrio Los Angeles, Valledupar, Cesar</item><!--Donde Siempre-->
+        <item>Cra. 6 #4-95 a 4-1, La Paz, Cesar</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurane_sancocho_telefono">
+        <item>+573158555213</item><!--Restaurante Rincón Paisa-->
+        <item>+573152428857</item><!--RESTAURANTE EL ESTABLO-->
+        <item>+5755654630</item><!--Restaurante La Brasa-->
+        <item>+5755733438</item><!--Sancocho Junior-->
+        <item>+5755834936</item><!--Donde Siempre-->
+        <item>+5755834936</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <!--Restaurante arroz de coco..............................................................................-->
+    <string-array name="restaurante_name_arroz_coco">
+        <item>Compae Chipuco</item>
+        <item>Varadero Valledupar</item>
+        <item>Restaurante Mary Luna</item>
+        <item>Sancocho Junior</item>
+        <item>Donde Siempre</item>
+        <item>La Paz EN LA VIA</item>
+    </string-array>
+
+    <string-array name="restaurante_horario_arroz_coco">
+        <item>De lunes a jueves, 07:00a19:00</item><!--Compae Chipuco-->
+        <item>De lunes a domingo, 12:00a15:00, 18:00a22:00</item><!--Varadero Valledupar-->
+        <item>De lunes a sabado: 06:00 a 14:00</item><!--Restaurante Mary Luna-->
+        <item>De lunes a domingo 10:30a16:00</item><!--Sancocho Junior-->
+        <item>De lunes a domingo, 18:00a23:00</item><!--Donde Siempre-->
+        <item>De lunes a sabado, 11:45 a 22:00</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_latitud_arroz_coco">
+        <item>10.478960</item><!--Compae Chipuco-->
+        <item>10.482557</item><!--Varadero Valledupar-->
+        <item>9.567710</item><!--Restaurante Mary Luna-->
+        <item>10.483433</item><!--Sancocho Junior-->
+        <item>10.485722</item><!--Donde Siempre-->
+        <item>10.387539</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_longitud_arroz_coco">
+        <item>-73.244421</item><!--Compae Chipuco-->
+        <item>-73.248674</item><!--Varadero Valledupar-->
+        <item>-73.329102</item><!--Restaurante Mary Luna-->
+        <item>-73.262143</item><!--Sancocho Junior-->
+        <item>-73.260212</item><!--Donde Siempre-->
+        <item>-73.171679</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurante_arroz_coco_direccion">
+        <item>Cra. 6 #No. 16-24, Valledupar, Cesar</item><!--Compae Chipuco-->
+        <item>Cl. 12 #6 - 56, Valledupar, Cesar</item><!--Varadero Valledupar-->
+        <item>a 1f-36, Dg. 1 #1f-2, La Jagüa de Ibirico, La Jagua de Ibirico, Cesar</item><!--Restaurante Mary Luna-->
+        <item>Calle 7 No. 19-24, Valledupar, Cesar</item><!--Sancocho Junior-->
+        <item>Carrera 13A #6C-02, Barrio Los Angeles, Valledupar, Cesar</item><!--Donde Siempre-->
+        <item>Cra. 6 #4-95 a 4-1, La Paz, Cesar</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <string-array name="restaurane_arroz_coco_telefono">
+        <item>+5755805635</item><!--Compae Chipuco-->
+        <item>+5755706175</item><!--Varadero Valledupar-->
+        <item>+573215855880</item><!--Restaurante Mary Luna-->
+        <item>+5755733438</item><!--Sancocho Junior-->
+        <item>+5755834936</item><!--Donde Siempre-->
+        <item>+5755834936</item><!--La Paz EN LA VIA-->
+    </string-array>
+
+    <!--Restaurante viuda de pescado......................................................................-->
+    <string-array name="restaurante_name_viuda_pescado">
+        <item>Restaurante San Roque</item>
+        <item>Pescado Aguachica</item>
+        <item>Cevicheria La Langosta</item>
+        <item>Pabellón del Pescado</item>
+    </string-array>
+    <string-array name="restaurante_horario_viuda_pescado">
+        <item>De lunes a domingo, 08:00 a 22:00</item><!--Restaurante San Roque-->
+        <item>De lunes a viernes: 11:45 a 13:00</item><!--Pescado Aguachica-->
+        <item>De  jueves a domingo, 11:00a23:00</item><!--Cevicheria La Langosta-->
+        <item>De lunes a domingo: 13:45 a 06:00</item><!--Pabellón del Pescado-->
+    </string-array>
+    <string-array name="restaurante_latitud_viuda_pescado">
+        <item>8.310823</item><!--Restaurante San Roque-->
+        <item>8.313116</item><!--Pescado Aguachica-->
+        <item>8.309565</item><!--Cevicheria La Langosta-->
+        <item>10.484733</item><!--Pabellón del Pescado-->
+    </string-array>
+    <string-array name="restaurante_longitud_viuda_pescado">
+        <item>-73.623981</item><!--Restaurante San Roque-->
+        <item>-73.626771</item><!--Pescado Aguachica-->
+        <item>-73.615391</item><!--Cevicheria La Langosta-->
+        <item>-73.248181</item><!--Pabellón del Pescado-->
+    </string-array>
+    <string-array name="restaurant_viuda_pescado_direccion">
+        <item>Cl. 5 ##1006, Aguachica, Cesar</item><!--Restaurante San Roque-->
+        <item>Cl. 2 #7a-119 a 7a-1, Aguachica, Cesar</item><!--Pescado Aguachica-->
+        <item>Cl. 6 #28-58, Aguachica, Cesar</item><!--Cevicheria La Langosta-->
+        <item>Valledupar, Cesar</item><!--Pabellón del Pescado-->
+    </string-array>
+    <string-array name="restaurane_viuda_pescado_telefono">
+        <item>+573155179187</item><!--Restaurante San Roque-->
+        <item>+573155179121</item><!--Pescado Aguachica-->
+        <item>+573185971929</item><!--Cevicheria La Langosta-->
+        <item>+573128765835</item><!--Pabellón del Pescado-->
+    </string-array>
 </resources>
