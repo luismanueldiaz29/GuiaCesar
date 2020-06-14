@@ -3,7 +3,12 @@ package com.example.guiavalledupar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textInfoCarrusel;
     int[] sampleImages = {R.drawable.laduda, R.drawable.lajunta, R.drawable.callejonpurruputu, R.drawable.pueblobello, R.drawable.canaberales, R.drawable.lapaz, R.drawable.colegioloperena};
     String[] nameImg = {"LA DUDA", "lA JUNTA", "CALLEJON DE LA PURRUPUTU", "PUEBLO BELLO", "MANANTIAL DE CAÑAVERALES", "LA PAZ", "COLEGIO NACIONAL LOPERENA"};
-
-
+    String[] LatitudImg = {"10.053117", "10.774313", "10.478926", "10.410502", "10.749664", "10.388072", "10.473482"};
+    String[] LongitudImg = {"-73.176672", "-73.145745", "-73.246718", "-73.591400", "-72.841748", "-73.169526", "-73.248729"};
     private static final String USGS_REQUEST_URL = "https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=b284db959637031077380e7e2c6f2775&format=json";
     private RequestQueue queue;
 
@@ -39,9 +44,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //textInfoCarrusel = findViewById(R.id.infocarrusel);
+        init();
 
+    }
 
+    public void init(){
         carouselView = (CarouselView) findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
         carouselView.setImageListener(imageListener);
@@ -49,9 +56,40 @@ public class MainActivity extends AppCompatActivity {
         carouselView.setImageClickListener(new ImageClickListener() {
             @Override
             public void onClick(int position) {
-                Toast.makeText(MainActivity.this, "LA FOTO FUE TOMADA EN "+nameImg[position], Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "LA FOTO FUE TOMADA EN "+nameImg[position], Toast.LENGTH_SHORT).show();
+                Dialog(position);
             }
         });
+    }
+
+    public void Dialog(final int position){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setMessage("LA FOTO FUE TOMADA EN "+nameImg[position])
+                .setTitle("Informacion del lugar")
+                .setCancelable(true)
+                .setPositiveButton("Ubicacion", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        //dialog.cancel();
+                        LanzarIntent(position);
+                    }
+                })
+                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alertDialog1 = alertDialog.create();
+        alertDialog.show();
+    }
+
+    private void LanzarIntent(int position){
+        Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+        intent.putExtra("Latitud", LatitudImg[position]);
+        intent.putExtra("Longitud", LongitudImg[position]);
+        intent.putExtra("Titulo", nameImg[position]);
+        startActivity(intent);
     }
 
     ImageListener imageListener = new ImageListener() {
