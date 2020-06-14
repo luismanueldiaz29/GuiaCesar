@@ -9,6 +9,7 @@ public class Restaurante {
     public Double Latitud;
     public Double Longitud;
     public String Telefono;
+    public String SitioUrl;
     public Restaurante(){
         Expandable = false;
     }

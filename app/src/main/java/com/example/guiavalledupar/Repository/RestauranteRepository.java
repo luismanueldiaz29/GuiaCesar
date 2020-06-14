@@ -38,6 +38,7 @@ public class RestauranteRepository {
         String LatitudRestaurante[] = Res.getStringArray(R.array.restaurante_latitud_chivo_Asado);
         String LongitudRestaurante[] = Res.getStringArray(R.array.restaurante_longitud_chivo_Asado);
         String TelefonoRestaurante[] = Res.getStringArray(R.array.restaurane_chivo_asado_telefono);
+        String PaginaRestaurante[] = Res.getStringArray(R.array.restaurante_red_social_chivo_asado);
 
         ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 
@@ -50,6 +51,7 @@ public class RestauranteRepository {
             restaurante.Longitud = Double.parseDouble(LongitudRestaurante[i]);
             restaurante.Latitud = Double.parseDouble(LatitudRestaurante[i]);
             restaurante.Telefono = TelefonoRestaurante[i];
+            restaurante.SitioUrl = PaginaRestaurante[i];
 
             restaurantes.add(restaurante);
         }
@@ -65,6 +67,7 @@ public class RestauranteRepository {
         String LatitudRestaurante[] = Res.getStringArray(R.array.restaurante_latitud_sancocho);
         String LongitudRestaurante[] = Res.getStringArray(R.array.restaurante_longitud_sancocho);
         String TelefonoRestaurante[] = Res.getStringArray(R.array.restaurane_sancocho_telefono);
+        String PaginaRestaurante[] = Res.getStringArray(R.array.restaurante_red_social_sancocho);
 
         ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 
@@ -77,6 +80,7 @@ public class RestauranteRepository {
             restaurante.Longitud = Double.parseDouble(LongitudRestaurante[i]);
             restaurante.Latitud = Double.parseDouble(LatitudRestaurante[i]);
             restaurante.Telefono = TelefonoRestaurante[i];
+            restaurante.SitioUrl = PaginaRestaurante[i];
             restaurantes.add(restaurante);
         }
 
@@ -91,6 +95,7 @@ public class RestauranteRepository {
         String LatitudRestaurante[] = Res.getStringArray(R.array.restaurante_latitud_carne_res_asado);
         String LongitudRestaurante[] = Res.getStringArray(R.array.restaurante_longitud_carne_res_asado);
         String TelefonoRestaurante[] = Res.getStringArray(R.array.restaurane_carne_res_asado_telefono);
+        String PaginaRestaurante[] = Res.getStringArray(R.array.restaurante_red_social_carne_res_asada);
         ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 
         for (int i = 0; i < NameRestaurante.length; i++){
@@ -102,6 +107,7 @@ public class RestauranteRepository {
             restaurante.Longitud = Double.parseDouble(LongitudRestaurante[i]);
             restaurante.Latitud = Double.parseDouble(LatitudRestaurante[i]);
             restaurante.Telefono = TelefonoRestaurante[i];
+            restaurante.SitioUrl = PaginaRestaurante[i];
             restaurantes.add(restaurante);
         }
 
@@ -116,6 +122,7 @@ public class RestauranteRepository {
         String LatitudRestaurante[] = Res.getStringArray(R.array.restaurante_latitud_arroz_coco);
         String LongitudRestaurante[] = Res.getStringArray(R.array.restaurante_longitud_arroz_coco);
         String TelefonoRestaurante[] = Res.getStringArray(R.array.restaurane_arroz_coco_telefono);
+        String PaginaRestaurante[] = Res.getStringArray(R.array.restaurante_red_social_arroz_coco);
         ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 
         for (int i = 0; i < NameRestaurante.length; i++){
@@ -127,6 +134,7 @@ public class RestauranteRepository {
             restaurante.Longitud = Double.parseDouble(LongitudRestaurante[i]);
             restaurante.Latitud = Double.parseDouble(LatitudRestaurante[i]);
             restaurante.Telefono = TelefonoRestaurante[i];
+            restaurante.SitioUrl = PaginaRestaurante[i];
             restaurantes.add(restaurante);
         }
 
@@ -141,7 +149,7 @@ public class RestauranteRepository {
         String LatitudRestaurante[] = Res.getStringArray(R.array.restaurante_latitud_viuda_pescado);
         String LongitudRestaurante[] = Res.getStringArray(R.array.restaurante_longitud_viuda_pescado);
         String TelefonoRestaurante[] = Res.getStringArray(R.array.restaurane_viuda_pescado_telefono);
-
+        String PaginaRestaurante[] = Res.getStringArray(R.array.restaurante_red_social_viuda_pescado);
         ArrayList<Restaurante> restaurantes = new ArrayList<Restaurante>();
 
         for (int i = 0; i < NameRestaurante.length; i++){
@@ -153,6 +161,7 @@ public class RestauranteRepository {
             restaurante.Longitud = Double.parseDouble(LongitudRestaurante[i]);
             restaurante.Latitud = Double.parseDouble(LatitudRestaurante[i]);
             restaurante.Telefono = TelefonoRestaurante[i];
+            restaurante.SitioUrl = PaginaRestaurante[i];
             restaurantes.add(restaurante);
         }
 

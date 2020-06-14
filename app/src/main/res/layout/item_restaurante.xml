@@ -132,7 +132,14 @@
                             android:id="@+id/llamar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_llamada_foreground"/>
+                            android:src="@drawable/ic_llamada_foreground"
+                            android:layout_marginRight="@dimen/Borde"/>
+
+                        <ImageView
+                            android:id="@+id/SiteWeb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_web_foreground"/>
 
                     </LinearLayout>
 

@@ -128,7 +128,7 @@
             Sin duda alguna, el mejor plan es visitar la ciudad en épocas del Festival Vallenato, su atractivo turístico destacado. Además de esto, una actividad ideal para toda la familia es recorrer las glorietas, cuyo principal atractivo son los monumentos. En la avenida Simón Bolívar, una de las más largas de la ciudad, se pueden ver las esculturas del Cacique Upar, el Folclor Vallenato y Los Gallos.
         </item>
         <item>
-            A tan solo 15 minutos de Valledupar se encuentra La Paz, tierra de compositores y almojábanas, pero que hoy en día basa su economía en la venta de gasolina de contrabando. Pese a ello cuenta con una gran variedad de atractivos tanto naturales como culturales, entre los que se destacan las calles empedradas de San José de Oriente, el Festival de la Almojabanera y el Festival Voces y Canciones.La almojábana es entonces lo más representativo de la gastronomía local y suele acompañarse muy bien por ricos granizados de mora y guanábana que se pueden encontrar sobre la vía nacional.
+            A tan solo 15 minutos de Valledupar se encuentra La Paz, tierra de compositores y almojábanas, pero que hoy en día basa su economía en la venta de gasolina de contrabando. Pese a ello cuenta con una gran variedad de atractivos tanto naturales como culturales, entre los que se destacan las calles empedradas de San José de Oriente, el Festival de la Almojabanera y el Festival Voces y Canciones.\n La almojábana es entonces lo más representativo de la gastronomía local y suele acompañarse muy bien por ricos granizados de mora y guanábana que se pueden encontrar sobre la vía nacional.
         </item>
         <item>
             Manaure Balcón del Cesar ha sido por excelencia el Balcón Turístico del Cesar, se caracteriza por la gran hermosura de su vegetación, la frescura de su medio ambiente la belleza de su río y sobre todo por la amabilidad de sus gentes. Manaure ha sido Musa de inspiración de viejos juglares del vallenato como son. el viejo Emiliano Zuleta, Poncho Cotes, Escalona, Andrés Becerra, Leandro Díaz, Juan Manuel Muegues y muchos otros, que al llegar a esta tierra se prendaron del encanto mágico de su entorno dedicándole sus mejores canciones.
@@ -223,6 +223,12 @@
         <item>Restaurante La Brasa</item>
     </string-array>
 
+    <string-array name="restaurante_red_social_chivo_asado">
+        <item>https://www.facebook.com/Santa-Brasa-Asados-660647544143411</item><!--Santa Brasa-->
+        <item>https://www.instagram.com/tipicos_eloy/?hl=es-la</item><!--Restaurante Tipicos Eloy-->
+        <item>https://www.instagram.com/restaurantelabrasaa/?hl=es-la</item><!--Restaurante La Brasa-->
+    </string-array>
+
     <string-array name="restaurante_horario_chivo_asado">
         <item>De lunes a viernes: 11:45 a 22:00</item><!--Santa Brasa-->
         <item>De lunes a viernes: 06:00 a 14:00</item><!--Restaurante Tipicos Eloy-->
@@ -261,6 +267,14 @@
         <item>Restaurante La Brasa</item>
         <item>Restaurante Rincón Paisa</item>
         <item>RESTAURANTE EL ESTABLO</item>
+    </string-array>
+
+    <string-array name="restaurante_red_social_carne_res_asada">
+        <item>https://www.facebook.com/Santa-Brasa-Asados-660647544143411</item><!--Santa Brasa-->
+        <item>https://www.instagram.com/tipicos_eloy/?hl=es-la</item><!--Restaurante Tipicos Eloy-->
+        <item>https://www.instagram.com/restaurantelabrasaa/?hl=es-la</item><!--Restaurante La Brasa-->
+        <item>https://rinconpaisa.business.site/?m=true</item><!--Restaurante Rincón Paisa-->
+        <item>https://www.facebook.com/RestauranteElEstablo.Aguachica</item><!--RESTAURANTE EL ESTABLO-->
     </string-array>
 
     <string-array name="restaurante_horario_carne_res_asado">
@@ -304,6 +318,7 @@
     </string-array>
 
     <!--Restaurantes sancocho.............................................................................-->
+
     <string-array name="restaurante_name_sancocho">
         <item>Restaurante Rincón Paisa</item>
         <item>RESTAURANTE EL ESTABLO</item>
@@ -313,10 +328,19 @@
         <item>La Paz EN LA VIA</item>
     </string-array>
 
+    <string-array name="restaurante_red_social_sancocho">
+        <item>https://rinconpaisa.business.site/?m=true</item><!--Restaurante Rincón Paisa-->
+        <item>https://www.facebook.com/RestauranteElEstablo.Aguachica</item><!--RESTAURANTE EL ESTABLO-->
+        <item>https://www.instagram.com/restaurantelabrasaa/?hl=es-la</item><!--Restaurante La Brasa-->
+        <item>https://www.instagram.com/sancochojunior/?hl=es-la</item><!--Sancocho Junior-->
+        <item>https://www.instagram.com/dondesiemprevpar/?hl=es-la</item><!--Donde Siempre-->
+        <item>https://www.google.com/maps/place/Restaurante+La+Paz+EN+LA+VIA/@10.3872431,-73.2066337,13z/data=!4m8!1m2!2m1!1sLa+Paz+EN+LA+VIA!3m4!1s0x8e8abc863edd6415:0x7017580eb469632e!8m2!3d10.3872431!4d-73.1716148</item><!--La Paz EN LA VIA-->
+    </string-array>
+
     <string-array name="restaurante_horario_sancocho">
         <item>De lunes a viernes: 11:45 a 22:00</item><!--Restaurante Rincón Paisa-->
         <item>De lunes a domingo: 06:00 a 22:00</item><!--RESTAURANTE EL ESTABLO-->
-        <item>De lunes a domingo: 06:00 a 22:00</item><!--Restaurante La Brasa-->ç
+        <item>De lunes a domingo: 06:00 a 22:00</item><!--Restaurante La Brasa-->
         <item>De lunes a domingo 10:30a16:00</item><!--Sancocho Junior-->
         <item>De lunes a domingo, 18:00a23:00</item><!--Donde Siempre-->
         <item>De lunes a sabado, 11:45 a 22:00</item><!--La Paz EN LA VIA-->
@@ -334,7 +358,7 @@
     <string-array name="restaurante_longitud_sancocho">
         <item>-73.603242</item><!--Restaurante Rincón Paisa-->
         <item>-73.598103</item><!--RESTAURANTE EL ESTABLO-->
-        <item>-73.596945</item><!--Restaurante La Brasa-->ç
+        <item>-73.596945</item><!--Restaurante La Brasa-->
         <item>-73.262143</item><!--Sancocho Junior-->
         <item>-73.260212</item><!--Donde Siempre-->
         <item>-73.171679</item><!--La Paz EN LA VIA-->
@@ -366,6 +390,15 @@
         <item>Sancocho Junior</item>
         <item>Donde Siempre</item>
         <item>La Paz EN LA VIA</item>
+    </string-array>
+
+    <string-array name="restaurante_red_social_arroz_coco">
+        <item>http://www.compaechipucorestobar.com/</item><!--Compae Chipuco-->
+        <item>http://varaderorestaurante.co/</item><!--Varadero Valledupar-->
+        <item>https://www.facebook.com/Restaurante-Mary-Luna-106451237749862</item><!--Restaurante Mary Luna-->
+        <item>https://www.instagram.com/sancochojunior/?hl=es-la</item><!--Sancocho Junior-->
+        <item>https://www.instagram.com/dondesiemprevpar/?hl=es-la</item><!--Donde Siempre-->
+        <item>https://www.google.com/maps/place/Restaurante+La+Paz+EN+LA+VIA/@10.3872431,-73.2066337,13z/data=!4m8!1m2!2m1!1sLa+Paz+EN+LA+VIA!3m4!1s0x8e8abc863edd6415:0x7017580eb469632e!8m2!3d10.3872431!4d-73.1716148</item><!--La Paz EN LA VIA-->
     </string-array>
 
     <string-array name="restaurante_horario_arroz_coco">
@@ -426,6 +459,14 @@
         <item>De  jueves a domingo, 11:00a23:00</item><!--Cevicheria La Langosta-->
         <item>De lunes a domingo: 13:45 a 06:00</item><!--Pabellón del Pescado-->
     </string-array>
+
+    <string-array name="restaurante_red_social_viuda_pescado">
+        <item>https://www.facebook.com/Restaurante-San-Roque-1588936501370021</item><!--Restaurante San Roque-->
+        <item>https://www.google.com/maps/place/Restaurante+Pescado+Aguachica/@8.3098574,-73.6206298,15z/data=!4m8!1m2!2m1!1sPescado+Aguachica!3m4!1s0x0:0x5b583a699d9ae373!8m2!3d8.3123405!4d-73.6265892</item><!--Pescado Aguachica-->
+        <item>https://www.facebook.com/Cevicher%C3%ADa-la-langosta-104389351313866</item><!--Cevicheria La Langosta-->
+        <item>https://www.google.com/maps/place/Pabell%C3%B3n+del+Pescado/@10.3671934,-73.6149255,8.83z/data=!4m8!1m2!2m1!1sPabell%C3%B3n+del+Pescado!3m4!1s0x8e8ab9bbf223469b:0xd8b1fe6c9fddf4be!8m2!3d10.4660988!4d-73.2459005</item><!--Pabellón del Pescado-->
+    </string-array>
+
     <string-array name="restaurante_latitud_viuda_pescado">
         <item>8.310823</item><!--Restaurante San Roque-->
         <item>8.313116</item><!--Pescado Aguachica-->

@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.guiavalledupar.Entity.Restaurante;
 import com.example.guiavalledupar.MapsActivity;
 import com.example.guiavalledupar.R;
+import com.example.guiavalledupar.Web;
 
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ import static java.security.AccessController.getContext;
 public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterExpandableRestaurante.ExpaPlatoViewHolder>{
 
     ArrayList<Restaurante> restaurantes;
-    ImageView Ubicacion, llamar;
+    ImageView Ubicacion, llamar, SiteWeb;
 
     public AdapterExpandableRestaurante(ArrayList<Restaurante> restaurantes){
         this.restaurantes = restaurantes;
@@ -54,7 +55,7 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
     }
 
     @Override
-    public int getItemCount() {
+    public int getItemCount()  {
         return restaurantes.size();
     }
 
@@ -73,6 +74,7 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
 
             Ubicacion = itemView.findViewById(R.id.Ubicacion);
             llamar = itemView.findViewById(R.id.llamar);
+            SiteWeb = itemView.findViewById(R.id.SiteWeb);
 
             titleTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -123,6 +125,15 @@ public class AdapterExpandableRestaurante extends RecyclerView.Adapter<AdapterEx
                                 });
                     AlertDialog alertDialog1 = alertDialog.create();
                     alertDialog.show();
+                }
+            });
+
+            SiteWeb.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(itemView.getContext(), Web.class);
+                    intent.putExtra("url", restaurantes.get(getAdapterPosition()).SitioUrl);
+                    itemView.getContext().startActivity(intent);
                 }
             });
         }
