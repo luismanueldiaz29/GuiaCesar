@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Municipios_Sitios"
+    tools:context=".GUI.Municipios_Sitios"
     android:background="@color/default_circle_indicator_stroke_color"
     android:orientation="vertical">
 

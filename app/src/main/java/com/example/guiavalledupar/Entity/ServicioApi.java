@@ -12,6 +12,7 @@ public class ServicioApi {
     public int tipo;
     public static final int HOTEL=1;
     public static final int HOSPITAL=2;
+    public static final int DROGUERIA=3;
     public static String getURLSpecial(String muni){
         return URL+"?municipio="+muni;
     }

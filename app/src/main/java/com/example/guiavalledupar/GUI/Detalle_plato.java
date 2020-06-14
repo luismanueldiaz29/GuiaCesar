@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.guiavalledupar.Adapters.AdapterExpandableRestaurante;
 import com.example.guiavalledupar.Entity.Plato;
 import com.example.guiavalledupar.Entity.Restaurante;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Repository.PlatoRepository;
 import com.example.guiavalledupar.Services.PlatoService;
 import com.example.guiavalledupar.Services.RestauranteService;

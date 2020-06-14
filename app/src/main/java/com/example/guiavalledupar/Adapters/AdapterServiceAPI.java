@@ -48,10 +48,12 @@ public class AdapterServiceAPI extends RecyclerView.Adapter<AdapterServiceAPI.Vi
         holder.name.setText(servicio.get(position).name);
         holder.direction.setText(servicio.get(position).direction);
         holder.phone.setText(servicio.get(position).phone);
-        if(servicio.get(position).tipo==2){
+        if(servicio.get(position).tipo==ServicioApi.HOSPITAL){
             holder.photo.setImageResource(R.drawable.hospital);
-        }else{
+        }else if(servicio.get(position).tipo== ServicioApi.HOTEL){
             holder.photo.setImageResource(R.drawable.recreacion);
+        }else if(servicio.get(position).tipo== ServicioApi.DROGUERIA){
+            holder.photo.setImageResource(R.drawable.drog);
         }
     }
 

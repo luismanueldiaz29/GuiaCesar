@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/default_circle_indicator_stroke_color"
-    tools:context=".List_Evento">
+    tools:context=".GUI.List_Evento">
 
     <TextView
         android:layout_width="match_parent"

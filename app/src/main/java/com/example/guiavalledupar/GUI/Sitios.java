@@ -1,21 +1,21 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.media.Image;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.guiavalledupar.Adapters.ModalBottomSheet;
 import com.example.guiavalledupar.Entity.Municipio;
+import com.example.guiavalledupar.MapsActivity;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Services.MunicipioService;
 import com.example.guiavalledupar.Services.SitioService;
 import com.getbase.floatingactionbutton.FloatingActionButton;

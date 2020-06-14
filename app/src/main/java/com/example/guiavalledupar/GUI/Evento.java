@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import com.example.guiavalledupar.Adapters.ModalBottomSheet;
 import com.example.guiavalledupar.Entity.Municipio;
+import com.example.guiavalledupar.MapsActivity;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Services.MunicipioService;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;

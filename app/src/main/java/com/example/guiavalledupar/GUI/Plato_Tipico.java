@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.guiavalledupar.Adapters.AdapterPlatos;
 import com.example.guiavalledupar.Entity.Plato;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Services.PlatoService;
 
 import java.util.ArrayList;

@@ -3,30 +3,23 @@ package com.example.guiavalledupar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
+import com.example.guiavalledupar.GUI.Emergencia;
+import com.example.guiavalledupar.GUI.List_Evento;
+import com.example.guiavalledupar.GUI.Municipios_Sitios;
+import com.example.guiavalledupar.GUI.Plato_Tipico;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -128,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     public void Emergencias(View view) {
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Emergencias", Toast.LENGTH_SHORT);
         toast1.show();
-        Intent intent =new Intent(this,Emergencia.class);
+        Intent intent =new Intent(this, Emergencia.class);
         startActivity(intent);
     }
 

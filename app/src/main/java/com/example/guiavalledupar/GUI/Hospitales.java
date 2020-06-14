@@ -1,10 +1,11 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -13,9 +14,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.guiavalledupar.Adapters.AdapterServiceAPI;
+import com.example.guiavalledupar.Entity.DrogueriaApi;
 import com.example.guiavalledupar.Entity.HospitalApi;
 import com.example.guiavalledupar.Entity.HotelApi;
 import com.example.guiavalledupar.Entity.ServicioApi;
+import com.example.guiavalledupar.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,14 +33,20 @@ public class Hospitales extends AppCompatActivity {
     private ArrayList<ServicioApi> servicioApis;
     private RecyclerView lista;
     private AdapterServiceAPI adapter;
+    private TextView txtMuni;
+
     private String municipio;
     private String URL;
     private String URL2;
+    private String URL3;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospitales);
+        setContentView(R.layout.activity_servicios);
         lista=findViewById(R.id.listaHospitalesAPI);
+        txtMuni=findViewById(R.id.txtMuniServicio);
         lista.setLayoutManager(new LinearLayoutManager(this));
         servicioApis = new ArrayList<>();
         if((getIntent().getStringExtra("PMunicipio") != null)){
@@ -64,13 +73,17 @@ public class Hospitales extends AppCompatActivity {
 
             URL=HospitalApi.getURLSpecial(municipio);
             URL2= HotelApi.getURLSpecial(municipio);
+            URL3= DrogueriaApi.getURLSpecial(municipio);
         }else{
             URL="https://www.datos.gov.co/resource/q2qp-usbt.json";
             URL2="https://www.datos.gov.co/resource/87gw-ij3v.json";
+            URL3="https://www.datos.gov.co/resource/32rd-kkaa.json";
         }
+        txtMuni.setText(municipio);
         queue = Volley.newRequestQueue(this);
         GetVolley();
         GetVolley2();
+        GetVolley3();
     }
 
     private void GetVolley2() {
@@ -94,8 +107,6 @@ public class Hospitales extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        adapter = new AdapterServiceAPI(servicioApis);
-                        lista.setAdapter(adapter);
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -106,6 +117,39 @@ public class Hospitales extends AppCompatActivity {
         this.queue.add(request);
     }
 
+    private void GetVolley3() {
+        JsonArrayRequest request
+                = new JsonArrayRequest(Request.Method.GET,URL3,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        try {
+                            ServicioApi drogueria;
+                            for(int i=0;i<response.length(); i++){
+                                JSONObject jsonObject=response.getJSONObject(i);
+                                drogueria=new DrogueriaApi();
+                                drogueria.name=jsonObject.getString(DrogueriaApi.jsonName);
+                                drogueria.direction=jsonObject.getString(DrogueriaApi.jsonDirection);
+                                drogueria.phone=jsonObject.getString(DrogueriaApi.jsonPhone);
+                                drogueria.municipio=jsonObject.getString(DrogueriaApi.jsonMuni);
+                                drogueria.tipo=ServicioApi.DROGUERIA;
+                                servicioApis.add(drogueria);
+                                adapter = new AdapterServiceAPI(servicioApis);
+                                lista.setAdapter(adapter);
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        this.queue.add(request);
+    }
     private void GetVolley(){
         JsonArrayRequest request
                 = new JsonArrayRequest(Request.Method.GET,URL,

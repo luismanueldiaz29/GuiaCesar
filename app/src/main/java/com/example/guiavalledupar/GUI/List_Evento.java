@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +12,13 @@ import android.widget.Toast;
 
 import com.example.guiavalledupar.Adapters.AdapterEventos;
 import com.example.guiavalledupar.Entity.Municipio;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Services.MunicipioService;
 
 import java.util.ArrayList;
 
-public class Municipios_Sitios extends AppCompatActivity {
+public class List_Evento extends AppCompatActivity {
 
-    private RecyclerView ReciclerViewMunicipio;
     private MunicipioService municipioService;
     private ArrayList<Municipio> municipios;
     private RecyclerView ReciclerViewEvento;
@@ -27,14 +27,14 @@ public class Municipios_Sitios extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_municipios__sitios);
+        setContentView(R.layout.activity_list__evento);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         municipioService = new MunicipioService(this);
         municipios = municipioService.getMunicipios();
 
-        ReciclerViewEvento = (RecyclerView)findViewById(R.id.ReciclerViewMunicipio);
+        ReciclerViewEvento = (RecyclerView)findViewById(R.id.ReciclerViewEvento);
         ReciclerViewEvento.setLayoutManager(new LinearLayoutManager(this));
 
         adapter = new AdapterEventos(municipios);
@@ -44,15 +44,15 @@ public class Municipios_Sitios extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String posicion = ReciclerViewEvento.getChildAdapterPosition(v)+"";
-                DetalleSitio(posicion);
+                DetalleEvento(posicion);
                 Toast.makeText(getApplicationContext(), "click in "+posicion, Toast.LENGTH_LONG).show();
             }
         });
     }
-    public void DetalleSitio(String posicion){
-        Intent intent = new Intent(this, Sitios.class);
-        intent.putExtra("PMunicipio", posicion);
+
+    public void DetalleEvento(String posicion){
+        Intent intent = new Intent(this, Evento.class);
+        intent.putExtra("PEvento", posicion);
         startActivity(intent);
     }
-
 }

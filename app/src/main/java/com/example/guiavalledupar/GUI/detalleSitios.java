@@ -1,4 +1,4 @@
-package com.example.guiavalledupar;
+package com.example.guiavalledupar.GUI;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.guiavalledupar.Entity.SiteOfInterest;
+import com.example.guiavalledupar.R;
 import com.example.guiavalledupar.Services.SitioService;
 
 public class detalleSitios extends AppCompatActivity {

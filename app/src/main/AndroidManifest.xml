@@ -25,10 +25,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Web"
-            android:parentActivityName=".Detalle_plato">
+            android:parentActivityName=".GUI.Detalle_plato">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Detalle_plato" />
+                android:value=".GUI.Detalle_plato" />
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -45,57 +45,57 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Hospitales" />
+        <activity android:name=".GUI.Hospitales" />
         <activity
-            android:name=".Municipios_Sitios"
+            android:name=".GUI.Municipios_Sitios"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".Emergencia" />
+        <activity android:name=".GUI.Emergencia" />
         <activity
-            android:name=".List_Evento"
+            android:name=".GUI.List_Evento"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Evento"
-            android:parentActivityName=".List_Evento">
+            android:name=".GUI.Evento"
+            android:parentActivityName=".GUI.List_Evento">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".List_Evento" />
+                android:value=".GUI.List_Evento" />
         </activity>
         <activity
-            android:name=".Detalle_plato"
-            android:parentActivityName=".Plato_Tipico">
+            android:name=".GUI.Detalle_plato"
+            android:parentActivityName=".GUI.Plato_Tipico">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Plato_Tipico" />
+                android:value=".GUI.Plato_Tipico" />
         </activity>
         <activity
-            android:name=".detalleSitios"
-            android:parentActivityName=".Municipios_Sitios">
+            android:name=".GUI.detalleSitios"
+            android:parentActivityName=".GUI.Municipios_Sitios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Municipios_Sitios" />
+                android:value=".GUI.Municipios_Sitios" />
         </activity>
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".Plato_Tipico"
+            android:name=".GUI.Plato_Tipico"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Sitios"
-            android:parentActivityName=".Municipios_Sitios">
+            android:name=".GUI.Sitios"
+            android:parentActivityName=".GUI.Municipios_Sitios">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Municipios_Sitios" />
+                android:value=".GUI.Municipios_Sitios" />
         </activity>
         <activity android:name=".Splash">
             <intent-filter>
