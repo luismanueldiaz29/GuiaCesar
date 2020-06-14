@@ -1,6 +1,6 @@
 package com.example.guiavalledupar.Entity;
 
-public class DrogueriaApi extends ServicioApi {
+public class DrogueriaApi extends ServiceApi {
     public static String URL="https://www.datos.gov.co/resource/32rd-kkaa.json";
     public static String jsonName="nombre_establecimiento";
     public static String jsonDirection="direccion";

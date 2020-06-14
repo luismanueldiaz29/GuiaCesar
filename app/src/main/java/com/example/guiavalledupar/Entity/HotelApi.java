@@ -1,6 +1,6 @@
 package com.example.guiavalledupar.Entity;
 
-public class HotelApi extends ServicioApi {
+public class HotelApi extends ServiceApi {
     public static String URL="https://www.datos.gov.co/resource/87gw-ij3v.json";//esta salen empresas turisticas"
     public static String jsonName="nombre";
     public static String jsonDirection="direccion_comercial";

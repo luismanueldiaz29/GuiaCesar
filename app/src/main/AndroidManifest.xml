@@ -45,7 +45,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".GUI.Hospitales" />
+        <activity android:name=".GUI.ServiciosPorMunicipio" />
         <activity
             android:name=".GUI.Municipios_Sitios"
             android:parentActivityName=".MainActivity">

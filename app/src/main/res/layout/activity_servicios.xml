@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".GUI.Hospitales">
+    tools:context=".GUI.ServiciosPorMunicipio">
 
     <TextView
-        android:id="@+id/txtMuniServicio"
+        android:id="@+id/muniServicioTV"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorAccent"
@@ -25,7 +25,7 @@
 
 
         <EditText
-            android:id="@+id/txtBuscar"
+            android:id="@+id/txtBuscarService"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -34,7 +34,7 @@
             android:text="" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnFiltrarService"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

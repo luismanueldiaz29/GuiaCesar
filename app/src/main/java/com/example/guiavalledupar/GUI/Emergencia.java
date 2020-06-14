@@ -84,7 +84,7 @@ public class Emergencia extends AppCompatActivity {
     }
 
     private void mostrarHospitales(String posicion){
-        Intent intent = new Intent(this, Hospitales.class);
+        Intent intent = new Intent(this, ServiciosPorMunicipio.class);
         int posInt=Integer.parseInt(posicion);
         String muni=municipios.get(posInt).nombre;
         intent.putExtra("PMunicipio", muni);

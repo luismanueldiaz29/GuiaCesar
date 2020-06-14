@@ -9,16 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.guiavalledupar.Entity.ServicioApi;
+import com.example.guiavalledupar.Entity.ServiceApi;
 import com.example.guiavalledupar.R;
 
 import java.util.ArrayList;
 
 public class AdapterServiceAPI extends RecyclerView.Adapter<AdapterServiceAPI.ViewHolder>implements View.OnClickListener {
     private View.OnClickListener listener;
-    ArrayList<ServicioApi> servicio =new ArrayList<>();
+    ArrayList<ServiceApi> servicio =new ArrayList<>();
 
-    public AdapterServiceAPI(ArrayList<ServicioApi> hospi) {
+    public AdapterServiceAPI(ArrayList<ServiceApi> hospi) {
         this.servicio =hospi ;
     }
 
@@ -48,11 +48,11 @@ public class AdapterServiceAPI extends RecyclerView.Adapter<AdapterServiceAPI.Vi
         holder.name.setText(servicio.get(position).name);
         holder.direction.setText(servicio.get(position).direction);
         holder.phone.setText(servicio.get(position).phone);
-        if(servicio.get(position).tipo==ServicioApi.HOSPITAL){
+        if(servicio.get(position).tipo== ServiceApi.HOSPITAL){
             holder.photo.setImageResource(R.drawable.hospital);
-        }else if(servicio.get(position).tipo== ServicioApi.HOTEL){
+        }else if(servicio.get(position).tipo== ServiceApi.HOTEL){
             holder.photo.setImageResource(R.drawable.recreacion);
-        }else if(servicio.get(position).tipo== ServicioApi.DROGUERIA){
+        }else if(servicio.get(position).tipo== ServiceApi.DROGUERIA){
             holder.photo.setImageResource(R.drawable.drog);
         }
     }
