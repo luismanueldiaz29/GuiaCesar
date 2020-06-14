@@ -43,6 +43,46 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioTodos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/todosservice" />
+
+                <RadioButton
+                    android:id="@+id/radioDrogueria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drogueriaservice" />
+
+                <RadioButton
+                    android:id="@+id/radioHospitales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hospitalesservice" />
+
+                <RadioButton
+                    android:id="@+id/radioTurismo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turismoservice" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaHospitalesAPI"
         android:layout_width="match_parent"

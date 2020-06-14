@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -39,6 +40,10 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
     private TextView txtMuni;
     private Button btnFiltrar;
     private EditText txtFilter;
+    private RadioButton radioTodos;
+    private RadioButton radioTurismo;
+    private RadioButton radioHospital;
+    private RadioButton radioDrogueria;
 
     private String municipio;
     private String URL;
@@ -98,18 +103,64 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
     private void filtrar(){
 
         String buscar=txtFilter.getText().toString().trim();
+        ArrayList<ServiceApi> lista2;
+        lista2 = new ArrayList<>();
         if(!buscar.equals("")) {
-            ArrayList<ServiceApi> lista2;
-            lista2 = new ArrayList<>();
+
             for (ServiceApi e : listaServices) {
-                if (e.name.contains(buscar)||e.name.contains(buscar.toUpperCase())|| e.getStringTipo().contains(buscar)) {
-                    lista2.add(e);
+                if(radioTodos.isChecked()){
+                    if (e.name.contains(buscar)||e.name.contains(buscar.toUpperCase())|| e.getStringTipo().contains(buscar)) {
+                        lista2.add(e);
+                    }
                 }
+                if(radioDrogueria.isChecked()){
+                    if (e.tipo==ServiceApi.DROGUERIA&&(e.name.contains(buscar)||e.name.contains(buscar.toUpperCase())|| e.getStringTipo().contains(buscar))) {
+                        lista2.add(e);
+                    }
+                }
+                if(radioHospital.isChecked()){
+                    if (e.tipo==ServiceApi.HOSPITAL&&(e.name.contains(buscar)||e.name.contains(buscar.toUpperCase())|| e.getStringTipo().contains(buscar))) {
+                        lista2.add(e);
+                    }
+                }
+                if(radioTurismo.isChecked()){
+                    if (e.tipo==ServiceApi.HOTEL&&(e.name.contains(buscar)||e.name.contains(buscar.toUpperCase())|| e.getStringTipo().contains(buscar))) {
+                        lista2.add(e);
+                    }
+                }
+
             }
             adapter = new AdapterServiceAPI(lista2);
             reciclerServices.setAdapter(adapter);
+        }else{
+            if(radioTodos.isChecked()){
+
+                adapter = new AdapterServiceAPI(listaServices);
+                reciclerServices.setAdapter(adapter);
+            }else{
+                for (ServiceApi e : listaServices) {
+                    if(radioDrogueria.isChecked()){
+                        if(e.tipo==ServiceApi.DROGUERIA){
+                            lista2.add(e);
+                        }
+                    }
+                    if(radioHospital.isChecked()){
+                        if(e.tipo==ServiceApi.HOSPITAL){
+                            lista2.add(e);
+                        }
+                    }
+                    if(radioTurismo.isChecked()){
+                        if(e.tipo==ServiceApi.HOTEL){
+                            lista2.add(e);
+                        }
+                    }
+                }
+                adapter = new AdapterServiceAPI(lista2);
+                reciclerServices.setAdapter(adapter);
+            }
         }
     }
+
 
     private void llenarLista(){
         GetVolley();
@@ -122,7 +173,10 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
         txtMuni=findViewById(R.id.muniServicioTV);
         txtFilter=findViewById(R.id.txtBuscarService);
         btnFiltrar =findViewById(R.id.btnFiltrarService);
-
+        radioTodos=findViewById(R.id.radioTodos);
+        radioTurismo=findViewById(R.id.radioTurismo);
+        radioHospital=findViewById(R.id.radioHospitales);
+        radioDrogueria=findViewById(R.id.radioDrogueria);
         listaServices = new ArrayList<>();
 
     }

@@ -160,6 +160,10 @@
     <string name="title_activity_maps">Map</string>
     <string name="buscar">Buscar</string>
     <string name="municipios">Municipios</string>
+    <string name="todosservice">Todos</string>
+    <string name="drogueriaservice">Droguerias</string>
+    <string name="hospitalesservice">Hospitales</string>
+    <string name="turismoservice">Turismo</string>
 
 
     <!--Array de platos tipicos...........................................................................................-->
