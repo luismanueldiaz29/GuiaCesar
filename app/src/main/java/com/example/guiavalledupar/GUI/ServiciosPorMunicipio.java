@@ -18,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.guiavalledupar.Adapters.AdapterServiceAPI;
+import com.example.guiavalledupar.Adapters.AdapterServiceApiExpandable;
 import com.example.guiavalledupar.Entity.DrogueriaApi;
 import com.example.guiavalledupar.Entity.HospitalApi;
 import com.example.guiavalledupar.Entity.HotelApi;
@@ -36,7 +37,8 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
     private RequestQueue queue;
     private ArrayList<ServiceApi> listaServices;
     private RecyclerView reciclerServices;
-    private AdapterServiceAPI adapter;
+    //private AdapterServiceAPI adapter;
+    private AdapterServiceApiExpandable adapter;
     private TextView txtMuni;
     private Button btnFiltrar;
     private EditText txtFilter;
@@ -130,12 +132,12 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
                 }
 
             }
-            adapter = new AdapterServiceAPI(lista2);
+            adapter = new AdapterServiceApiExpandable(lista2);
             reciclerServices.setAdapter(adapter);
         }else{
             if(radioTodos.isChecked()){
 
-                adapter = new AdapterServiceAPI(listaServices);
+                adapter = new AdapterServiceApiExpandable(listaServices);
                 reciclerServices.setAdapter(adapter);
             }else{
                 for (ServiceApi e : listaServices) {
@@ -155,7 +157,7 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
                         }
                     }
                 }
-                adapter = new AdapterServiceAPI(lista2);
+                adapter = new AdapterServiceApiExpandable(lista2);
                 reciclerServices.setAdapter(adapter);
             }
         }
@@ -197,6 +199,7 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
                                 hospital.phone=jsonObject.getString(HospitalApi.jsonPhone);
                                 hospital.municipio=jsonObject.getString(HospitalApi.jsonMuni);
                                 hospital.tipo= ServiceApi.HOSPITAL;
+                                hospital.Expandable=false;
                                 listaServices.add(hospital);
                             }
                         } catch (JSONException e) {
@@ -227,6 +230,7 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
                                 hotel.phone=jsonObject.getString(HotelApi.jsonPhone);
                                 hotel.municipio=jsonObject.getString(HotelApi.jsonMuni);
                                 hotel.tipo= ServiceApi.HOTEL;
+                                hotel.Expandable=false;
                                 listaServices.add(hotel);
                             }
                         } catch (JSONException e) {
@@ -257,8 +261,9 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
                                 drogueria.phone=jsonObject.getString(DrogueriaApi.jsonPhone);
                                 drogueria.municipio=jsonObject.getString(DrogueriaApi.jsonMuni);
                                 drogueria.tipo= ServiceApi.DROGUERIA;
+                                drogueria.Expandable=false;
                                 listaServices.add(drogueria);
-                                adapter = new AdapterServiceAPI(listaServices);
+                                adapter = new AdapterServiceApiExpandable(listaServices);
                                 reciclerServices.setAdapter(adapter);
                             }
                         } catch (JSONException e) {

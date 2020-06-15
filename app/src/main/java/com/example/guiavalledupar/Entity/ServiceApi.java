@@ -5,6 +5,8 @@ public class ServiceApi {
     public String direction;
     public String phone;
     public String municipio;
+    public Boolean Expandable;
+
     public static String jsonName="";
     public static String jsonDirection="";
     public static String jsonPhone="";
