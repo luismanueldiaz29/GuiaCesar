@@ -19,6 +19,7 @@ public class ActividadRepository {
         Resources Res = this.context.getResources();
         String[] name = Res.getStringArray(R.array.name_actividad);
         String[] description = Res.getStringArray(R.array.description_actividad);
+        String[] title = Res.getStringArray(R.array.title_actividad);
         int[] img = {R.drawable.parapente,R.drawable.senderismo,R.drawable.avistamiento,R.drawable.ciclomontanismo};
 
         ArrayList<Actividad> actividades = new ArrayList<>();
@@ -27,12 +28,13 @@ public class ActividadRepository {
             Actividad actividad = new Actividad();
             actividad.Name = name[i];
             actividad.Description = description[i];
+            actividad.title=title[i];
             actividad.Image = img[i];
             actividades.add(actividad);
         }
-
         return actividades;
     }
+
     public Actividad getActividad(int posicion){
 
         ArrayList<Actividad> actividades =  getActividades();

@@ -513,9 +513,17 @@
             ciclomontañismo
         </item>
     </string-array>
+
+    <string-array name="title_actividad">
+        <item>¿Alguna vez te has preguntado cómo ven las aves el mundo desde arriba?</item>
+        <item>Maravillese con el paisaje mientras relaja su cuerpo y mente</item>
+        <item>¿Quien quisiera ser un ave para volar?</item>
+        <item>Ejercítate conociendo y respirando aire fresco en nuestra región.</item>
+    </string-array>
+
     <string-array name="description_actividad">
         <item>
-            ¿Alguna vez te has preguntado cómo ven las aves el mundo desde arriba?
+
 Descúbrelo!, vamos a volar en Parapente en el Manaure, Cesar
 
 Admira la majestuosidad del la imponente Sierra Nevada de Santamarta desde el aire, disfruta de la belleza de nuestros atardeceres, sobrevuela un área con el espíritu mágico de la ancestral cultura Aruaca.
@@ -549,7 +557,7 @@ Para mas información visite el sitio
 https://www.siturcesar.com/actividades/ver/3
         </item>
         <item>
-            Ejercítate conociendo y respirando aire fresco en nuestra región.
+
 
             ¿Qué opinan los especialistas?
             Juan Felipe Gutiérrez, médico internista egresado de la Universidad de

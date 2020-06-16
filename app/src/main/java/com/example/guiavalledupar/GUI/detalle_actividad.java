@@ -16,6 +16,7 @@ public class detalle_actividad extends AppCompatActivity {
     private Actividad actividad;
     private int pocision;
     private TextView tvName;
+    private TextView tvTitle;
     private TextView tvDescription;
     private ImageView imgActividad;
     ActividadRepository repository;
@@ -25,6 +26,7 @@ public class detalle_actividad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_actividad);
         tvName=findViewById(R.id.tvNameActividad);
+        tvTitle=findViewById(R.id.titleActividadTV);
         tvDescription=findViewById(R.id.tvActividadDescription);
         imgActividad=findViewById(R.id.imgActividadDe);
         repository=new ActividadRepository(this);
@@ -40,6 +42,7 @@ public class detalle_actividad extends AppCompatActivity {
     private void detalleActividad(){
         imgActividad.setImageResource(actividad.Image);
         tvName.setText(actividad.Name);
+        tvTitle.setText(actividad.title);
         tvDescription.setText(actividad.Description);
     }
 

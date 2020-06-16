@@ -14,21 +14,32 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imgActividadDe"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:src="@drawable/nofoto"
-                android:layout_marginTop="@dimen/Borde"/>
-
             <TextView
                 android:id="@+id/tvNameActividad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/Borde"
                 android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="30dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgActividadDe"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/Borde"
+                android:src="@drawable/nofoto" />
+
+            <TextView
+                android:id="@+id/titleActividadTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textStyle="italic"
+                android:layout_margin="@dimen/Borde"
+                android:textSize="@dimen/parrafoPlato"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
