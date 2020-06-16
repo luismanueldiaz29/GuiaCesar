@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GUI.Actividades"></activity>
+        <activity android:name=".GUI.detalle_actividad"></activity>
+        <activity android:name=".GUI.Actividades" />
         <activity
             android:name=".Web"
             android:parentActivityName=".GUI.Detalle_plato">

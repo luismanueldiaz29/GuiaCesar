@@ -13,7 +13,6 @@ public class ActividadService {
     public ActividadService(Context context){
         repository=new ActividadRepository(context);
     }
-    public ArrayList<Actividad> getActividades(){
-        return repository.getActividad();
-    }
+    public ArrayList<Actividad> getActividades(){ return repository.getActividades(); }
+    public Actividad getActividad(int posicion){ return repository.getActividad(posicion); }
 }

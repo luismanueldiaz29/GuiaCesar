@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.guiavalledupar.Adapters.AdapterActividades;
@@ -29,15 +31,21 @@ public class Actividades extends AppCompatActivity {
 
         recyclerView=findViewById(R.id.reciclerActi);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //recyclerViewPlatos.setLayoutManager(new LinearLayoutManager(this));
+
         adapter=new AdapterActividades(actividades);
         recyclerView.setAdapter(adapter);
-        //Toast toast1 = Toast.makeText(getApplicationContext(),actividades.size(), Toast.LENGTH_SHORT);
-        /*
-        *<androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reciclerActividades2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />*/
-        //toast1.show();
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String posicion = recyclerView.getChildAdapterPosition(v)+"";
+                Detalle(posicion);
+                Toast.makeText(getApplicationContext(), "click in "+posicion, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    public void Detalle(String item){
+        Intent intent = new Intent(this, detalle_actividad.class);
+        intent.putExtra("posicion", item);
+        startActivity(intent);
     }
 }

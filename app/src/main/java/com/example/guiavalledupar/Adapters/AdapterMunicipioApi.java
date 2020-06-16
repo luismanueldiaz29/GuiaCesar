@@ -45,7 +45,7 @@ public class AdapterMunicipioApi extends RecyclerView.Adapter<AdapterMunicipioAp
     @Override
     public void onBindViewHolder(@NonNull AdapterMunicipioApi.ViewHolder holder, int position) {
         holder.name.setText(municipioApis.get(position).nombre);
-        holder.direction.setText(municipioApis.get(position).direccion);
+        holder.direction.setText("Alcaldia: "+ municipioApis.get(position).direccion);
     }
 
     @Override
