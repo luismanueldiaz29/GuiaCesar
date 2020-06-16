@@ -23,7 +23,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Emergencia extends AppCompatActivity {
+public class Municipio_Servicio extends AppCompatActivity {
     private RequestQueue queue;
     private ArrayList<MunicipioApi>municipios;
     private RecyclerView lista;
@@ -32,7 +32,7 @@ public class Emergencia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_emergencia);
+        setContentView(R.layout.activity_municipio_servicio);
         lista=findViewById(R.id.reciclerMApi);
         lista.setLayoutManager(new LinearLayoutManager(this));
         municipios= new ArrayList<MunicipioApi>();

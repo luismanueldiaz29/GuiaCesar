@@ -13,7 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
-import com.example.guiavalledupar.GUI.Emergencia;
+import com.example.guiavalledupar.GUI.Actividades;
+import com.example.guiavalledupar.GUI.Municipio_Servicio;
 import com.example.guiavalledupar.GUI.List_Evento;
 import com.example.guiavalledupar.GUI.Municipios_Sitios;
 import com.example.guiavalledupar.GUI.Plato_Tipico;
@@ -107,7 +108,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Parques(View view) {
-        android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Parques", Toast.LENGTH_SHORT);
+        Intent intent =new Intent(this, Actividades.class);
+        startActivity(intent);
+        android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Actividades", Toast.LENGTH_SHORT);
         toast1.show();
     }
 
@@ -121,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     public void Emergencias(View view) {
         android.widget.Toast toast1 =Toast.makeText(getApplicationContext(),"Emergencias", Toast.LENGTH_SHORT);
         toast1.show();
-        Intent intent =new Intent(this, Emergencia.class);
+        Intent intent =new Intent(this, Municipio_Servicio.class);
         startActivity(intent);
     }
 

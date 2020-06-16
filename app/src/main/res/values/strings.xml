@@ -497,4 +497,67 @@
         <item>+573185971929</item><!--Cevicheria La Langosta-->
         <item>+573128765835</item><!--Pabellón del Pescado-->
     </string-array>
+
+
+
+    <string-array name="name_actividad">
+        <item>
+           Parapente
+        </item>
+        <item>
+            Senderismo
+        </item>
+        <item>
+            Avistamiento de aves
+        </item>
+        <item>
+            ciclomontañismo
+        </item>
+    </string-array>
+    <string-array name="description_actividad">
+        <item>
+            ¿Alguna vez te has preguntado cómo ven las aves el mundo desde arriba?
+Descúbrelo!, vamos a volar en Parapente en el Manaure, Cesar
+
+Admira la majestuosidad del la imponente Sierra Nevada de Santamarta desde el aire, disfruta de la belleza de nuestros atardeceres, sobrevuela un área con el espíritu mágico de la ancestral cultura Aruaca.
+
+¡Olvídate de tus miedos volando en parapente!
+​
+En dónde puedo volar cerca a la costa?
+Voladero Manaure Aventura, A 15 minutos de Manaure y 45 min de Valledupar.
+        </item>
+        <item>
+            Este plan es perfecto para todo aquel que disfrute ejercitar su cuerpo, disfrutando de la naturaleza y el clima fresco de la mañana.
+
+Mirador del Santo Ecce Homo. Si visitas Valledupar puedes realizar caminatas por el parque lineal del rio Guatapurí y conectar
+con los senderos del cerro del mirador del Santo Ecce Homo.
+
+Manaure: En este municipio encontraras el Cerro de la Cruz y los caminos hasta Sabana Rubia.
+
+Recomedaciones: Ropa y calzado adecuados. Si realizas estas actividades en Valledupar ten en cuenta que el clima es cálido y seco,
+la hidratación es fundamental. En Manaure ten en cuenta que la mayoría de los senderos son en altura; en el caso de Sabana Rubia
+llegarás hasta los 3.000 m.s.n.m por lo que debes llevar ropa para clima frio.
+        </item>
+        <item>
+            el departamento tiene registrada cerca de 800 especies, lo que la hace en una zona muy atractiva para esta actividad.
+Si usted es apasionado por esta actividad, le encantará visitar uno de los siguientes lugares que son
+reconocidos por esta actividad:
+Serranía del Perijá.
+Sierra Nevada.
+Ciénaga de Zapatosa.
+Bosque seco del Valle del Cesar.
+Para mas información visite el sitio
+https://www.siturcesar.com/actividades/ver/3
+        </item>
+        <item>
+            Ejercítate conociendo y respirando aire fresco en nuestra región.
+
+            ¿Qué opinan los especialistas?
+            Juan Felipe Gutiérrez, médico internista egresado de la Universidad de
+            Cartagena y especialista de la Universidad del Norte, asegura que en
+            términos generales este tipo de ejercicio es muy benéfico.
+            “Es un ejercicio aerobio, significa que toda la energía que se utiliza deriva
+            del metabolismo en presencia de oxigeno habiendo mínima producción de ácido
+            láctico (el principal responsable de los dolores musculares de los días siguientes a la actividad física).</item>
+    </string-array>
 </resources>

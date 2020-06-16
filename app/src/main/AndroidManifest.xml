@@ -9,7 +9,9 @@
     <!-- Permiso para realizar llamada -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
-    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- permisos de intenet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,7 +26,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Web"
+        <activity android:name=".GUI.Actividades"></activity>
+        <activity
+            android:name=".Web"
             android:parentActivityName=".GUI.Detalle_plato">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -53,7 +57,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".GUI.Emergencia" />
+        <activity android:name=".GUI.Municipio_Servicio" />
         <activity
             android:name=".GUI.List_Evento"
             android:parentActivityName=".MainActivity">

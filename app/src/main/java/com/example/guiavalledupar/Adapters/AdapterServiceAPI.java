@@ -36,7 +36,7 @@ public class AdapterServiceAPI extends RecyclerView.Adapter<AdapterServiceAPI.Vi
     @NonNull
     @Override
     public AdapterServiceAPI.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_hospital, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_service, parent, false);
         view.setOnClickListener(this);
 
         AdapterServiceAPI.ViewHolder viewHolder = new AdapterServiceAPI.ViewHolder(view);
