@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -66,7 +67,7 @@ public class AdapterServiceApiExpandable extends RecyclerView.Adapter<AdapterSer
         private TextView direction;
         private TextView phone;
         private ImageView photo;
-        private CardView cardServicio;
+        private LinearLayout linearServicios;
 
         public ExpaServiceViewHolder(@NonNull final View itemView) {
             super(itemView);
@@ -74,13 +75,13 @@ public class AdapterServiceApiExpandable extends RecyclerView.Adapter<AdapterSer
             direction=itemView.findViewById(R.id.hospitalApiDir2);
             phone=itemView.findViewById(R.id.hospitalApiPhone2);
             photo = (ImageView)itemView.findViewById(R.id.ivServiceImage2);
-            cardServicio=itemView.findViewById(R.id.cartaServicio);
+            linearServicios=itemView.findViewById(R.id.linearServicios);
 
             expandableLayout = itemView.findViewById(R.id.expandableServiceLayout);
             Ubicacion = itemView.findViewById(R.id.ubicacion_service);
             llamar = itemView.findViewById(R.id.llamar_service);
 
-            cardServicio.setOnClickListener(new View.OnClickListener() {
+            linearServicios.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     ServiceApi service = services.get(getAdapterPosition());

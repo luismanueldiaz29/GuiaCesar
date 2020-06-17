@@ -21,7 +21,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 
         <EditText
@@ -45,7 +46,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Borde"
+        android:layout_marginBottom="@dimen/Borde">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,39 +56,42 @@
             android:orientation="vertical">
 
             <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioTodos"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/todosservice" />
 
                 <RadioButton
                     android:id="@+id/radioDrogueria"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/drogueriaservice" />
 
                 <RadioButton
                     android:id="@+id/radioHospitales"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hospitalesservice" />
 
                 <RadioButton
                     android:id="@+id/radioTurismo"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/turismoservice" />
 
             </RadioGroup>
+
         </LinearLayout>
     </ScrollView>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaHospitalesAPI"
         android:layout_width="match_parent"
-        android:layout_height="683dp" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

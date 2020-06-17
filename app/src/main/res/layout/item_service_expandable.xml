@@ -9,106 +9,120 @@
     android:paddingLeft="8dp"
     android:layout_marginRight="8dp">
 
+    <LinearLayout
+        android:id="@+id/linearServicios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cartaServicio"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/ivServiceImage2"
+            android:layout_width="113dp"
             android:layout_height="match_parent"
-            >
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:id="@+id/linearServicios"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nofoto" />
 
-                <ImageView
-                    android:id="@+id/ivServiceImage2"
-                    android:layout_width="200dp"
-                    android:layout_height="104dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/nofoto" />
+        <LinearLayout
+            android:layout_width="273dp"
+            android:layout_height="85dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hospitalApiName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expandableServiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearServicios">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/Borde"
+            android:paddingRight="@dimen/Borde"
+            android:paddingTop="@dimen/Borde">
 
                 <LinearLayout
-                    android:layout_width="250dp"
-                    android:layout_height="108dp"
-                    android:layout_margin="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/Borde">
                     <TextView
-                        android:id="@+id/hospitalApiName2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/hospitalApiDir2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textStyle="italic" />
-
-                    <TextView
-                        android:id="@+id/hospitalApiPhone2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-            </LinearLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/expandableServiceLayout"
-                    android:layout_width="403dp"
-                    android:layout_height="68dp"
-                    android:background="@color/common_google_signin_btn_text_light_default"
-                    android:visibility="visible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.496"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/linearServicios">
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:textColor="@color/ic_launcher_background"
+                        android:textSize="20dp"
+                        android:text="Direccion: "/>
+                    <TextView
+                        android:id="@+id/hospitalApiDir2"
+                        android:textColor="@color/ic_launcher_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/ubicacion_service"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_local_foreground"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ic_launcher_background"
+                        android:textSize="20dp"
+                        android:text="Telefono: "
+                        android:layout_marginRight="@dimen/Borde"/>
+                        <TextView
+                            android:id="@+id/hospitalApiPhone2"
+                            android:textColor="@color/ic_launcher_background"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/llamar_service"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_llamada_foreground"
-                            tools:layout_editor_absoluteX="137dp"
-                            tools:layout_editor_absoluteY="16dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ubicacion_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_local_foreground"
+                        android:layout_marginRight="@dimen/Borde"/>
 
-                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/llamar_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Borde"
+                        android:src="@drawable/ic_llamada_foreground"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
 </LinearLayout>

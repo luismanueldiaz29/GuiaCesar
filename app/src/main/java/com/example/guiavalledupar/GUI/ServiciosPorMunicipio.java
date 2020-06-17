@@ -1,5 +1,6 @@
 package com.example.guiavalledupar.GUI;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -46,7 +48,7 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
     private RadioButton radioTurismo;
     private RadioButton radioHospital;
     private RadioButton radioDrogueria;
-
+    private RadioGroup radioGroup;
     private String municipio;
     private String URL;
     private String URL2;
@@ -57,6 +59,10 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicios);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         setControls();
         layoutManager=new LinearLayoutManager(this);
         reciclerServices.setLayoutManager(layoutManager);
@@ -92,14 +98,50 @@ public class ServiciosPorMunicipio extends AppCompatActivity {
         }
 
         txtMuni.setText(municipio);
-        btnFiltrar.setOnClickListener(new View.OnClickListener() {
+        /*radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });*/
+        clicked();
+        /*btnFiltrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });*/
+        queue = Volley.newRequestQueue(this);
+        llenarLista();
+    }
+
+    private void clicked(){
+        radioDrogueria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 filtrar();
             }
         });
-        queue = Volley.newRequestQueue(this);
-        llenarLista();
+        radioHospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });
+
+        radioTodos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });
+        radioTurismo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                filtrar();
+            }
+        });
     }
 
     private void filtrar(){
