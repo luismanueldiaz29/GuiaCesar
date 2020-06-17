@@ -2,7 +2,6 @@ package com.example.guiavalledupar.Repository;
 
 import android.content.Context;
 import android.content.res.Resources;
-
 import com.example.guiavalledupar.Entity.Actividad;
 import com.example.guiavalledupar.R;
 
@@ -20,8 +19,9 @@ public class ActividadRepository {
         String[] name = Res.getStringArray(R.array.name_actividad);
         String[] description = Res.getStringArray(R.array.description_actividad);
         String[] title = Res.getStringArray(R.array.title_actividad);
-        int[] img = {R.drawable.parapente,R.drawable.senderismo,R.drawable.avistamiento,R.drawable.ciclomontanismo};
-
+        int[] img = {R.drawable.parapente,R.drawable.senderismo,R.drawable.avistamiento,
+                R.drawable.ciclomontanismo,R.drawable.patinaje,R.drawable.balneario,
+                R.drawable.biblioteca};
         ArrayList<Actividad> actividades = new ArrayList<>();
 
         for (int i = 0; i < name.length; i++){

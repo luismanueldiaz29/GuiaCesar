@@ -512,6 +512,16 @@
         <item>
             ciclomontañismo
         </item>
+        <item>
+            Patinaje
+        </item>
+        <item>
+            Visitar el Balneario
+        </item>
+        <item>
+            Visitar la biblioteca Departamental
+        </item>
+
     </string-array>
 
     <string-array name="title_actividad">
@@ -519,6 +529,10 @@
         <item>Maravillese con el paisaje mientras relaja su cuerpo y mente</item>
         <item>¿Quien quisiera ser un ave para volar?</item>
         <item>Ejercítate conociendo y respirando aire fresco en nuestra región.</item>
+        <item>Ven y experimenta la velocidad</item>
+        <item>Ven y disfruta de la sencillez</item>
+        <item>Ven y empapate de cultura</item>
+        <item></item>
     </string-array>
 
     <string-array name="description_actividad">
@@ -566,5 +580,32 @@ https://www.siturcesar.com/actividades/ver/3
             “Es un ejercicio aerobio, significa que toda la energía que se utiliza deriva
             del metabolismo en presencia de oxigeno habiendo mínima producción de ácido
             láctico (el principal responsable de los dolores musculares de los días siguientes a la actividad física).</item>
+        <item>“Es una obra hermosa y maravillosa que le va a garantizar a niños y jóvenes
+            la oportunidad de entrenar y competir en óptimas condiciones. A estos niños se les
+            va a transformar sus vidas gracias a esta obra, estoy muy contento porque sé que esta
+            nueva generación cuenta con un escenario excelente y eso les permitirá mostrar mejores
+            resultados en su disciplina” Declaró el exgobernador Ovalle durante la inauguración
+            del nuevo patinodromo.
+            El patinodromo Elias Ochoa es una de las sedes nacionales declaradas como validas
+            para la realización de competiciones de nivel profesional, su entrada es libre al publico
+            asi que si te encuentras en el la ciudad puedes venir y sentir lo que es patinar en una
+            verdadera pista profesional</item>
+        <item>
+            "Bello y relajante balneario. Un lugar que no puedes dejar de visitar en tu visita por el Cesar.
+            Ideal par ir con amigos y familia y pasar un día agradable." -Comenta Camila luego de visitar
+            el balneario Hurtado en Valledupar.
+            "Un descanso y un sitio para disfrutar la naturaleza y los amigos"-Comenta Henry
+        </item>
+        <item>
+            La Biblioteca Pública Departamental ‘Rafael Carrillo Lúquez’ calificada
+            como una de las 7 mejores del país. la biblioteca departamental
+            abre sus puertas de manera gratuita a visitantes de todo tipo y sin necesidad
+            de registrarse.
+            Ofrece a sus visitantes la posibilidad de que accedan de forma gratuita a más de 20 mil libros
+            de diferentes áreas del conocimiento y a las actividades culturales que se realizan dentro de la institución
+            Destacamos la Sala Patrimonial
+            Esta sala reúne las colecciones de autores de la región con el fin de
+            promover la protección, organización, divulgación y acceso a las diferentes expresiones de nuestros escritores.
+        </item>
     </string-array>
 </resources>
