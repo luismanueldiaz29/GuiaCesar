@@ -10,76 +10,86 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/Borde"
-                android:background="@color/design_default_color_secondary_variant"
-                android:gravity="center"
-                android:text="@string/string_municipio_eventos"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="25dp"/>
-
-            <TextView
-                android:id="@+id/tvNombreMunicipio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="La paz"
-                android:textSize="@dimen/string_size_municipio"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/Borde"/>
-
-            <ImageView
-                android:id="@+id/ivEventoImage"
-                android:layout_width="@dimen/width_img_evento"
-                android:layout_height="@dimen/height_img_evento"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="@dimen/Borde"
-                android:src="@drawable/lapazcesar" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="@dimen/Borde">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/header_eventos"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/Borde"
+                    android:background="@color/design_default_color_secondary_variant"
+                    android:gravity="center"
+                    android:text="@string/string_municipio_eventos"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvNombreMunicipio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Descripcion"
+                    android:text="La paz"
                     android:textSize="@dimen/string_size_municipio"
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:layout_marginTop="@dimen/Borde"/>
 
-                <TextView
-                    android:id="@+id/tvdescripcionMunicipio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/parrafoPlato"
-                    android:autoLink="web"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Eventos"
-                    android:textSize="@dimen/string_size_municipio"
+                <ImageView
+                    android:id="@+id/ivEventoImage"
+                    android:layout_width="@dimen/width_img_evento"
+                    android:layout_height="@dimen/height_img_evento"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:layout_marginTop="@dimen/Borde"/>
-                <TextView
-                    android:id="@+id/tvEventoDescription"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="@dimen/Borde"
+                    android:src="@drawable/lapazcesar" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/parrafoPlato"
-                    android:autoLink="web"/>
-                
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/Borde">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:textSize="@dimen/string_size_municipio"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/Borde"/>
+
+                    <TextView
+                        android:id="@+id/tvdescripcionMunicipio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/parrafoPlato"
+                        android:autoLink="web"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eventos"
+                        android:textSize="@dimen/string_size_municipio"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/Borde"/>
+                    <TextView
+                        android:id="@+id/tvEventoDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/parrafoPlato"
+                        android:autoLink="web"/>
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

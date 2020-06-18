@@ -3,15 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="8dp"
-    android:layout_marginRight="8dp">
+
+    android:layout_marginRight="5dp"
+    app:layout_goneMarginRight="5dp"
+    android:layout_marginTop="5dp">
 
     <LinearLayout
         android:id="@+id/linearServicios"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@color/default_circle_indicator_fill_color"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
@@ -58,71 +62,76 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="170dp"
             android:orientation="vertical"
             android:paddingLeft="@dimen/Borde"
-            android:paddingRight="@dimen/Borde"
-            android:paddingTop="@dimen/Borde">
+            android:paddingTop="@dimen/Borde"
+            android:paddingRight="@dimen/Borde">
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/Borde"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion: "
+                    android:textColor="@color/ic_launcher_background"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/hospitalApiDir2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginRight="@dimen/Borde">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/ic_launcher_background"
-                        android:textSize="20dp"
-                        android:text="Direccion: "/>
-                    <TextView
-                        android:id="@+id/hospitalApiDir2"
-                        android:textColor="@color/ic_launcher_background"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/ic_launcher_background"
-                        android:textSize="20dp"
-                        android:text="Telefono: "
-                        android:layout_marginRight="@dimen/Borde"/>
-                        <TextView
-                            android:id="@+id/hospitalApiPhone2"
-                            android:textColor="@color/ic_launcher_background"
-                            android:textSize="20dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/ubicacion_service"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_local_foreground"
-                        android:layout_marginRight="@dimen/Borde"/>
-
-                    <ImageView
-                        android:id="@+id/llamar_service"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/Borde"
-                        android:src="@drawable/ic_llamada_foreground"/>
-                </LinearLayout>
+                    android:textColor="@color/ic_launcher_background"
+                    android:textSize="20dp"
+                    android:textStyle="italic" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/Borde"
+                    android:text="Telefono: "
+                    android:textColor="@color/ic_launcher_background"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/hospitalApiPhone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ic_launcher_background"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ubicacion_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/Borde"
+                    android:src="@drawable/ic_local_foreground" />
+
+                <ImageView
+                    android:id="@+id/llamar_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Borde"
+                    android:src="@drawable/ic_llamada_foreground" />
+            </LinearLayout>
+        </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

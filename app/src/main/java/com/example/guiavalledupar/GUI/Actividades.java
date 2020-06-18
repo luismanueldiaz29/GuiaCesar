@@ -26,6 +26,10 @@ public class Actividades extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividades);
 
+        Init();
+    }
+
+    private void Init(){
         service=new ActividadService(this);
         actividades=service.getActividades();
 

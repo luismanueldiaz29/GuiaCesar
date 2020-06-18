@@ -8,6 +8,7 @@
     android:layout_marginTop="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginBottom="5dp"
+    android:background="@color/default_circle_indicator_fill_color"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView

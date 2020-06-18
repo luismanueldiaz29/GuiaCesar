@@ -4,11 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GUI.Municipio_Servicio">
+    tools:context=".GUI.Municipio_Servicio"
+    android:background="@color/default_circle_indicator_stroke_color"
+    android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/header_servicio"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reciclerMApi"
+        android:layout_margin="@dimen/Borde"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

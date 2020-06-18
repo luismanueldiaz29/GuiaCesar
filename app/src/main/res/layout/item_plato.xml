@@ -7,7 +7,8 @@
     android:layout_marginLeft="5dp"
     android:layout_marginTop="5dp"
     android:layout_marginRight="5dp"
-    android:layout_marginBottom="5dp">
+    android:layout_marginBottom="5dp"
+    >
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -20,14 +21,15 @@
 
             <ImageView
                 android:id="@+id/ivPlatoImage"
-                android:layout_width="238dp"
+                android:layout_width="182dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/chivoasado" />
 
             <LinearLayout
-                android:layout_width="300dp"
-                android:layout_height="138dp"
+                android:layout_width="210dp"
+                android:layout_height="141dp"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
@@ -49,6 +51,7 @@
                     android:id="@+id/tvPlatoDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
                     android:text="TextView"
                     android:textSize="15dp" />
             </LinearLayout>

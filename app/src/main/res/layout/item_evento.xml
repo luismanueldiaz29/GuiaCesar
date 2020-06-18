@@ -20,15 +20,15 @@
 
             <ImageView
                 android:id="@+id/ivEventoImage"
-                android:layout_width="238dp"
+                android:layout_width="188dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
                 android:src="@drawable/pueblobellocesar" />
 
             <LinearLayout
-                android:layout_width="300dp"
-                android:layout_height="138dp"
+                android:layout_width="225dp"
+                android:layout_height="126dp"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"

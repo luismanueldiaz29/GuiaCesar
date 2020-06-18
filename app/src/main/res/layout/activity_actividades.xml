@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/default_circle_indicator_stroke_color"
     tools:context=".GUI.Actividades">
 
-    <TextView
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorAccent"
@@ -16,12 +17,28 @@
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        android:typeface="normal" />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/reciclerActi"
+        android:typeface="normal" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/header_actividad"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reciclerActi"
+                    android:layout_margin="@dimen/Borde"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
 
 
 

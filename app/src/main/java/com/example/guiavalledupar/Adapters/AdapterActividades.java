@@ -43,19 +43,20 @@ public class AdapterActividades extends RecyclerView.Adapter<AdapterActividades.
     public void onBindViewHolder(@NonNull AdapterActividades.ViewHolder holder, int position) {
         holder.name.setText(actividades.get(position).Name);
         holder.photo.setImageResource(actividades.get(position).Image);
+        holder.tvActividadDescription.setText(actividades.get(position).title);
     }
 
     @Override
     public int getItemCount() { return actividades.size(); }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView name;
+        private TextView name, tvActividadDescription;
         private ImageView photo;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name=itemView.findViewById(R.id.ActividadNameTV);
             photo = (ImageView)itemView.findViewById(R.id.ivActividad);
-
+            tvActividadDescription = (TextView)itemView.findViewById(R.id.tvActividadDescription);
         }
     }
 }

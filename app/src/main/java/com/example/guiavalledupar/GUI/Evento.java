@@ -69,11 +69,9 @@ public class Evento extends AppCompatActivity {
     }
 
     private void LanzarLocalizacion(){
-        int pocision = Integer.parseInt(getIntent().getStringExtra("PEvento"));
+        //int pocision = Integer.parseInt(getIntent().getStringExtra("PEvento"));
         Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
-        intent.putExtra("name", municipioService.getMunicipio(pocision).Name);
-        intent.putExtra("longitud", municipioService.getMunicipio(pocision).Longitud);
-        intent.putExtra("latitud", municipioService.getMunicipio(pocision).Latitud);
+        intent.putExtra("posicion", getIntent().getStringExtra("PEvento"));
         startActivity(intent);
     }
 
