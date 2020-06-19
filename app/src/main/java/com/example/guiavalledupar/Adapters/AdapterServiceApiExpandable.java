@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class AdapterServiceApiExpandable extends RecyclerView.Adapter<AdapterServiceApiExpandable.ExpaServiceViewHolder> {
     ArrayList<ServiceApi> services;
-    ImageView Ubicacion, llamar, SiteWeb;
+    ImageView  llamar, SiteWeb;
 
 
     public AdapterServiceApiExpandable(ArrayList<ServiceApi> services){
@@ -78,7 +78,6 @@ public class AdapterServiceApiExpandable extends RecyclerView.Adapter<AdapterSer
             linearServicios=itemView.findViewById(R.id.linearServicios);
 
             expandableLayout = itemView.findViewById(R.id.expandableServiceLayout);
-            Ubicacion = itemView.findViewById(R.id.ubicacion_service);
             llamar = itemView.findViewById(R.id.llamar_service);
 
             linearServicios.setOnClickListener(new View.OnClickListener() {
